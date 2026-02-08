@@ -219,6 +219,8 @@ python audio_server_onnx.py
 4. The backend serves both the API and the frontend from a single service
 
 ### Static Frontend Only (Netlify)
+![Uploading image.png…]()
+
 
 For demo/offline mode without the backend:
 1. Deploy `index.html` to [Netlify](https://app.netlify.com) via drag-and-drop
