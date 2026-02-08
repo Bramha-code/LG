@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lg2-audio-server
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn audio_server_onnx:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PORT
+        value: 10000
+    plan: free

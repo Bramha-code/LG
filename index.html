@@ -1,0 +1,2197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMES LQC System v2.0 - Updated</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #c0c5cc;
+        }
+
+        .app-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles - Matching original CSS */
+        .gmes-header {
+            background: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 100%);
+            border-bottom: 3px solid #e91e63;
+            padding: 6px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            flex-shrink: 0;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .logo-icon {
+            color: #e91e63;
+            fill: #e91e63;
+        }
+
+        .logo-text {
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        .header-title {
+            color: white;
+        }
+
+        .header-subtitle {
+            color: #e91e63;
+            font-size: 12px;
+            margin-left: 4px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-time {
+            color: #d0d0d0;
+            font-size: 12px;
+        }
+
+        .header-button {
+            padding: 4px 10px;
+            background-color: #555;
+            color: white;
+            border: 1px solid #666;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .header-button:hover {
+            background-color: #666;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 8px;
+            display: flex;
+            gap: 8px;
+            min-height: 0;
+        }
+
+        /* Panels */
+        .gmes-panel {
+            background-color: #f0f0f0;
+            border: 1px solid #b0b0b0;
+            border-radius: 3px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Left Panel */
+        .left-panel {
+            flex: 7;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-height: 0;
+        }
+
+        /* Product Info Table */
+        .product-info {
+            flex-shrink: 0;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .info-table td {
+            border: 1px solid #999;
+            padding: 8px;
+            font-size: 11px;
+        }
+
+        .info-label {
+            background: linear-gradient(180deg, #e0e0e0 0%, #c8c8c8 100%);
+            border: 1px solid #a0a0a0;
+            font-weight: 600;
+            color: #333;
+            white-space: nowrap;
+        }
+
+        .info-value {
+            background-color: white;
+            border: 1px solid #a0a0a0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .level-value {
+            background-color: white;
+            border: 1px solid #a0a0a0;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .level2-value {
+            color: #000000;
+        }
+
+        .level3-value {
+            color: #000000;
+        }
+
+        .clear-button {
+            background: linear-gradient(180deg, #d9534f 0%, #c9302c 100%);
+            border: 1px solid #ac2925;
+            color: white;
+            padding: 8px;
+            cursor: pointer;
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        .clear-button:hover {
+            background: linear-gradient(180deg, #c9302c 0%, #ac2925 100%);
+        }
+
+        .clear-button:active {
+            background: linear-gradient(180deg, #ac2925 0%, #a02020 100%);
+        }
+
+        /* Defect Grid Container */
+        .defect-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        .defect-header {
+            background: linear-gradient(180deg, #4a5568 0%, #2d3748 100%);
+            color: white;
+            border-bottom: 1px solid #888;
+            padding: 6px 12px;
+            text-align: center;
+        }
+
+        .defect-header h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .defect-grid-wrapper {
+            flex: 1;
+            padding: 8px;
+            background-color: #b8b8b8;
+            overflow-y: auto;
+        }
+
+        .defect-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+
+        .defect-button {
+            background: linear-gradient(180deg, #ffffff 0%, #e8e8e8 100%);
+            border: 1px solid #999;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            border-radius: 3px;
+            padding: 16px 8px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.15s;
+            line-height: 1.3;
+        }
+
+        .defect-button:hover {
+            background: linear-gradient(180deg, #f0f0f0 0%, #d8d8d8 100%);
+            transform: translateY(-1px);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .defect-button:active {
+            background: linear-gradient(180deg, #d0d0d0 0%, #c0c0c0 100%);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+            transform: scale(0.98);
+        }
+
+        .defect-button.selected {
+            background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+            border-color: #2196f3;
+            box-shadow: 0 0 0 2px #2196f3;
+        }
+
+        .defect-button.selected-defect {
+            background: linear-gradient(180deg, #d0d0d0 0%, #c0c0c0 100%);
+            border-color: #999;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .defect-button.predicted {
+            background: linear-gradient(to bottom, #e0e0e0, #bdbdbd);
+            border-color: #9e9e9e;
+            box-shadow: 0 0 0 3px #9e9e9e, 0 4px 8px rgba(158, 158, 158, 0.3);
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.85;
+            }
+        }
+
+        .defect-button.space-pressed {
+            transform: scale(0.95);
+        }
+
+        .defect-button:disabled {
+            opacity: 0;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        /* Pagination */
+        .pagination-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px;
+            background-color: #b8b8b8;
+            gap: 6px;
+        }
+
+        .back-button,
+        .pagination-button {
+            background: linear-gradient(180deg, #e0e0e0 0%, #c8c8c8 100%);
+            border: 1px solid #999;
+            border-radius: 3px;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .back-button:hover,
+        .pagination-button:hover {
+            background: linear-gradient(180deg, #d0d0d0 0%, #b8b8b8 100%);
+        }
+
+        .pagination-button {
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-display {
+            background-color: white;
+            border: 1px solid #999;
+            padding: 6px;
+            width: 56px;
+            text-align: center;
+            font-size: 12px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .pagination-controls {
+            display: flex;
+            gap: 4px;
+        }
+
+        /* Middle Panel */
+        .middle-panel {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        /* Status Display */
+        .status-display {
+            border: 2px solid #444;
+            border-radius: 3px;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transition: background-color 0.2s;
+            background-color: #1a1a1a;
+        }
+
+        .status-display.recording {
+            background-color: #7f1d1d;
+        }
+
+        .status-display.processing {
+            background-color: #78350f;
+        }
+
+        .audio-level-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #333;
+        }
+
+        .audio-level-fill {
+            height: 100%;
+            transition: width 0.075s;
+        }
+
+        .status-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+        }
+
+        .status-text {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .status-text.recording {
+            color: #f87171;
+            animation: pulse 1s infinite;
+        }
+
+        .status-text.processing {
+            color: #fbbf24;
+            animation: pulse 1s infinite;
+        }
+
+        .status-text.result {
+            font-size: 24px;
+            color: #22d3ee;
+        }
+
+        .mic-icon {
+            color: #f87171;
+            margin-bottom: 8px;
+            animation: pulse 1s infinite;
+        }
+
+        .status-hint {
+            color: #999;
+            font-size: 10px;
+            margin-top: 4px;
+        }
+
+        .error-text {
+            color: #f87171;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        /* Live Predictions */
+        .predictions-panel {
+            background-color: #111;
+            border-top: 1px solid #444;
+            padding: 6px 8px;
+        }
+
+        .predictions-title {
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+
+        .prediction-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 2px;
+        }
+
+        .prediction-name {
+            font-size: 10px;
+            width: 90px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #999;
+        }
+
+        .prediction-name.top {
+            color: white;
+            font-weight: 600;
+        }
+
+        .prediction-bar {
+            flex: 1;
+            height: 10px;
+            background-color: #333;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .prediction-bar-fill {
+            height: 100%;
+            border-radius: 2px;
+            transition: width 0.3s;
+        }
+
+        .prediction-confidence {
+            font-size: 10px;
+            width: 32px;
+            text-align: right;
+            font-family: 'Courier New', monospace;
+            color: #666;
+        }
+
+        .prediction-confidence.top {
+            color: white;
+        }
+
+        /* Code Entry Table */
+        .code-entry-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 10px;
+        }
+
+        .code-entry-table th {
+            background-color: #c8c8c8;
+            border: 1px solid #888;
+            padding: 4px 8px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .code-entry-table td {
+            border: 1px solid #888;
+            padding: 4px;
+        }
+
+        .code-entry-table input {
+            width: 100%;
+            padding: 4px;
+            border: 1px solid #999;
+            font-size: 10px;
+        }
+
+        .code-entry-table input[readonly] {
+            background-color: #f5f5f5;
+        }
+
+        .checkmark {
+            color: #4caf50;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Repair History */
+        .repair-history {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        .repair-header {
+            background-color: #b8b8b8;
+            border-bottom: 1px solid #888;
+            padding: 4px 8px;
+            text-align: center;
+        }
+
+        .repair-header h3 {
+            font-size: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .repair-list {
+            flex: 1;
+            padding: 4px;
+            background-color: #e0e0e0;
+            overflow-y: auto;
+        }
+
+        .repair-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9px;
+        }
+
+        .repair-table th {
+            background-color: #c8c8c8;
+            border: 1px solid #888;
+            padding: 2px 4px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .repair-table td {
+            border: 1px solid #888;
+            padding: 2px 4px;
+            color: #333;
+        }
+
+        .repair-table td.empty {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            padding: 8px;
+        }
+
+        .repair-footer {
+            background-color: #b8b8b8;
+            border-top: 1px solid #888;
+            padding: 2px 8px;
+        }
+
+        .repair-footer h4 {
+            font-size: 9px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        /* Confirm Button */
+        .confirm-button {
+            background: linear-gradient(180deg, #c9302c 0%, #a02020 100%);
+            border: 1px solid #801818;
+            border-radius: 3px;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .confirm-button:hover {
+            background: linear-gradient(180deg, #b02020 0%, #801818 100%);
+        }
+
+        .confirm-button:active {
+            background: linear-gradient(180deg, #a02020 0%, #701010 100%);
+        }
+
+        .confirm-button:disabled {
+            background: linear-gradient(180deg, #ccc 0%, #aaa 100%);
+            border-color: #999;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        /* Right Panel */
+        .right-panel {
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .action-button {
+            background: linear-gradient(to bottom, #e8e8e8, #d0d0d0);
+            border: 1px solid #999;
+            border-radius: 3px;
+            padding: 8px 4px;
+            cursor: pointer;
+            font-size: 9px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.2;
+            color: #333;
+        }
+
+        .action-button:hover {
+            background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+        }
+
+        .action-button:active {
+            background: linear-gradient(to bottom, #c8c8c8, #b8b8b8);
+        }
+
+        /* SVG Icons */
+        .icon {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .icon-small {
+            width: 12px;
+            height: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="gmes-header">
+            <div class="header-left">
+                <div class="logo-container">
+                    <svg class="icon logo-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L6.04,7.5L12,10.85L17.96,7.5L12,4.15Z" />
+                    </svg>
+                    <span class="logo-text">GMES</span>
+                </div>
+                <div>
+                    <span class="header-title">IL(P)_REF02 / LQC Symptom(R-Comp LQC)</span>
+                    <span class="header-subtitle">[CNZN6309]</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="header-time" id="headerTime">1/12/2025 12:21:54 PM</span>
+                <button class="header-button">
+                    <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M12 1v6m0 6v6m5.656-14.142l-4.242 4.242m-2.828 2.828l-4.242 4.242M23 12h-6m-6 0H1m17.142 5.656l-4.242-4.242m-2.828-2.828l-4.242-4.242">
+                        </path>
+                    </svg>
+                    Config
+                </button>
+                <button class="header-button">
+                    <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                    Logout
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Left Panel -->
+            <div class="left-panel">
+                <!-- Product Info -->
+                <div class="gmes-panel product-info">
+                    <table class="info-table">
+                        <tr>
+                            <td class="info-label" style="width: 85px;">Set(WIP) S/N</td>
+                            <td class="info-value">6A2X0049-109445</td>
+                            <td class="info-label" style="width: 55px;">Level 1</td>
+                            <td class="level-value" style="width: 140px;" id="level1Display">LQC</td>
+                            <td style="width: 55px; padding: 0;"><button class="clear-button"
+                                    onclick="clearLevel('level1')">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">W/O</td>
+                            <td class="info-value">6A2X0049</td>
+                            <td class="info-label">Level 2</td>
+                            <td class="level-value level2-value" id="level2Display"></td>
+                            <td style="padding: 0;"><button class="clear-button"
+                                    onclick="clearLevel('level2')">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Model.Suffix</td>
+                            <td class="info-value">GL-B257HDSY.DDSZEBN</td>
+                            <td class="info-label">Level 3</td>
+                            <td class="level-value level3-value" id="level3Display"></td>
+                            <td style="padding: 0;"><button class="clear-button"
+                                    onclick="clearLevel('level3')">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="info-label"></td>
+                            <td class="info-value"></td>
+                            <td class="info-label">Level 4</td>
+                            <td class="level-value" id="level4Display"></td>
+                            <td style="padding: 0;"><button class="clear-button"
+                                    onclick="clearLevel('level4')">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="info-label"></td>
+                            <td class="info-value"></td>
+                            <td class="info-label">Defect<br>Code</td>
+                            <td class="level-value" id="defectCodeDisplay"
+                                style="font-family: 'Courier New', monospace; font-weight: bold;">LA</td>
+                            <td style="background-color: #e8e8e8;"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Defect Grid -->
+                <div class="gmes-panel defect-container">
+                    <div class="defect-header">
+                        <h2 id="gridTitle">Defect Level 2</h2>
+                    </div>
+                    <div class="defect-grid-wrapper">
+                        <div class="defect-grid" id="defectGrid"></div>
+                    </div>
+                    <div class="pagination-container">
+                        <button class="back-button" id="backButton" style="display: none;" onclick="goBack()">←
+                            Back</button>
+                        <div style="flex: 1;"></div>
+                        <div class="pagination-controls">
+                            <button class="pagination-button" onclick="prevPage()">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <div class="page-display" id="pageDisplay">01/01</div>
+                            <button class="pagination-button" onclick="nextPage()">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Panel -->
+            <div class="middle-panel">
+                <!-- Status Display -->
+                <div class="status-display" id="statusDisplay">
+                    <div class="audio-level-bar" id="audioLevelBar" style="display: none;">
+                        <div class="audio-level-fill" id="audioLevelFill"></div>
+                    </div>
+                    <div class="status-content">
+                        <svg class="icon mic-icon" id="micIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" style="display: none;">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                        <h1 class="status-text" id="statusText">READY</h1>
+                        <p class="status-hint" id="statusHint"></p>
+                        <p class="error-text" id="errorText"></p>
+                    </div>
+                    <div class="predictions-panel" id="predictionsPanel" style="display: none;">
+                        <div class="predictions-title" id="predictionsTitle">LIVE PREDICTIONS</div>
+                        <div id="predictionsList"></div>
+                    </div>
+                </div>
+
+                <!-- Code Entry -->
+                <div class="gmes-panel">
+                    <table class="code-entry-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 60px;">Code</th>
+                                <th>Code Name</th>
+                                <th style="width: 40px; text-align: center;">✓</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" id="codeInput" value="LA"
+                                        style="font-family: 'Courier New', monospace;"></td>
+                                <td><input type="text" id="codeNameInput" placeholder="Select..." readonly></td>
+                                <td style="text-align: center;"><span class="checkmark" id="checkmark"
+                                        style="display: none;">✓</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Repair History -->
+                <div class="gmes-panel repair-history">
+                    <div class="repair-header">
+                        <h3>REPAIR HISTORY</h3>
+                    </div>
+                    <div class="repair-list">
+                        <table class="repair-table">
+                            <thead>
+                                <tr>
+                                    <th>Repair Name</th>
+                                </tr>
+                            </thead>
+                            <tbody id="repairHistoryBody">
+                                <tr>
+                                    <td class="empty">No history</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="repair-footer">
+                        <h4>Cause Department</h4>
+                    </div>
+                    <div class="repair-footer">
+                        <h4>SYMTOM</h4>
+                    </div>
+                </div>
+
+                <!-- Confirm Button -->
+                <button class="confirm-button" id="confirmButton" onclick="confirmDefect()" disabled>LQC
+                    CONFIRM</button>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="right-panel">
+                <button class="action-button">KEYBD</button>
+                <button class="action-button">Compose</button>
+                <button class="action-button">INSPECT SHEET</button>
+                <button class="action-button">Re-Print</button>
+                <button class="action-button">Label History</button>
+                <button class="action-button">Line Stop</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // LQC Data - Complete dataset from original React app (all 392 entries)
+        const lqcData = [
+            { part: 'Bottom', code: 'LAAEA1', defect: 'Distance' },
+            { part: 'Bottom', code: 'LAAEA1', defect: 'Gap' },
+            { part: 'C-Fan', code: 'LAAFAA', defect: 'Not fasten Properly' },
+            { part: 'C-Fan', code: 'LAAFAA', defect: 'Misassembly' },
+            { part: 'Cover T/V', code: 'LAAHA8', defect: 'Foreign Substance' },
+            { part: 'Cover T/V', code: 'LAAHA8', defect: 'Dirty' },
+            { part: 'Cover T/V', code: 'LAAHAB', defect: 'Crack' },
+            { part: 'Cover T/V', code: 'LAAHAB', defect: 'Tear' },
+            { part: 'Egg Tray', code: 'LAAMAB', defect: 'Crack' },
+            { part: 'Egg Tray', code: 'LAAMAB', defect: 'Tear' },
+            { part: 'Egg Tray', code: 'LAAMAD', defect: 'Missing' },
+            { part: 'F-Fan', code: 'LAAPAQ', defect: 'Not working Properly' },
+            { part: 'F-Fan', code: 'LAAPAR', defect: 'Noise' },
+            { part: 'Front-L', code: 'LAARA1', defect: 'Distance' },
+            { part: 'Front-L', code: 'LAARA1', defect: 'Gap' },
+            { part: 'Front-L', code: 'LAARAL', defect: 'Scratch' },
+            { part: 'Front-L', code: 'LAARAP', defect: 'PU Leakage' },
+            { part: 'Front-L Screw', code: 'LAASAA', defect: 'Not fasten Properly' },
+            { part: 'Front-L Screw', code: 'LAASAA', defect: 'Misassembly' },
+            { part: 'Front-L Screw', code: 'LAASAD', defect: 'Missing' },
+            { part: 'Hinge-C', code: 'LAAVAD', defect: 'Missing' },
+            { part: 'Hinge C Screw', code: 'LAAWAD', defect: 'Missing' },
+            { part: 'I/Maker(F)', code: 'LAAYAD', defect: 'Missing' },
+            { part: 'I/Maker(F)', code: 'LAAYAE', defect: 'Wrong Parts' },
+            { part: 'I/Maker(F)', code: 'LAAYAQ', defect: 'Not working Properly' },
+            { part: 'LVS Sticker', code: 'LABCAD', defect: 'Missing' },
+            { part: 'LVS Sticker', code: 'LABCAN', defect: 'Tilt' },
+            { part: 'Mark/Logo', code: 'LABEAD', defect: 'Missing' },
+            { part: 'Mark/Logo', code: 'LABEAE', defect: 'Wrong Parts' },
+            { part: 'Mark/Logo', code: 'LABEAN', defect: 'Tilt' },
+            { part: 'O/Case', code: 'LABFAL', defect: 'Scratch' },
+            { part: 'O/Case', code: 'LABFAM', defect: 'Dent' },
+            { part: 'O/Case', code: 'LABFAP', defect: 'PU Leakage' },
+            { part: 'O/Case', code: 'LABFAV', defect: 'Bulging' },
+            { part: 'Specification Label', code: 'LABNAD', defect: 'Missing' },
+            { part: 'Specification Label', code: 'LABNAE', defect: 'Wrong Parts' },
+            { part: 'Specification Label', code: 'LABNAN', defect: 'Tilt' },
+            { part: 'Tray Meat', code: 'LABWAB', defect: 'Crack' },
+            { part: 'Tray Meat', code: 'LABWAB', defect: 'Tear' },
+            { part: 'Tray Meat', code: 'LABWAD', defect: 'Missing' },
+            { part: 'Tray Meat', code: 'LABWAK', defect: 'Burr' },
+            { part: 'Tray Meat', code: 'LABWAK', defect: 'Material' },
+            { part: 'Tray Meat', code: 'LABWAK', defect: 'Printed' },
+            { part: 'Tray Meat', code: 'LABWAL', defect: 'Scratch' },
+            { part: 'Tray Meat', code: 'LABWAM', defect: 'Dent' },
+            { part: 'Gasket(F)', code: 'LABYA0', defect: 'Coming off' },
+            { part: 'Gasket(F)', code: 'LABYA0', defect: 'Not inserting' },
+            { part: 'Gasket(F)', code: 'LABYA1', defect: 'Distance' },
+            { part: 'Gasket(F)', code: 'LABYA1', defect: 'Gap' },
+            { part: 'Gasket(F)', code: 'LABYA8', defect: 'Foreign Substance' },
+            { part: 'Gasket(F)', code: 'LABYA8', defect: 'Dirty' },
+            { part: 'Gasket(F)', code: 'LABYAB', defect: 'Crack' },
+            { part: 'Gasket(F)', code: 'LABYAB', defect: 'Tear' },
+            { part: 'Gasket(R)', code: 'LACAA0', defect: 'Coming off' },
+            { part: 'Gasket(R)', code: 'LACAA0', defect: 'Not inserting' },
+            { part: 'Gasket(R)', code: 'LACAA1', defect: 'Distance' },
+            { part: 'Gasket(R)', code: 'LACAA1', defect: 'Gap' },
+            { part: 'Gasket(R)', code: 'LACAA8', defect: 'Foreign Substance' },
+            { part: 'Gasket(R)', code: 'LACAA8', defect: 'Dirty' },
+            { part: 'Gasket(R)', code: 'LACAAB', defect: 'Crack' },
+            { part: 'Gasket(R)', code: 'LACAAB', defect: 'Tear' },
+            { part: 'Warning Label', code: 'LACHAD', defect: 'Missing' },
+            { part: 'Warning Label', code: 'LACHAE', defect: 'Wrong Parts' },
+            { part: 'Warning Label', code: 'LACHAN', defect: 'Tilt' },
+            { part: 'Grill Fan', code: 'LACJA1', defect: 'Distance' },
+            { part: 'Grill Fan', code: 'LACJA1', defect: 'Gap' },
+            { part: 'Grill Fan', code: 'LACJA8', defect: 'Foreign Substance' },
+            { part: 'Grill Fan', code: 'LACJA8', defect: 'Dirty' },
+            { part: 'Grill Fan', code: 'LACJAB', defect: 'Crack' },
+            { part: 'Grill Fan', code: 'LACJAB', defect: 'Tear' },
+            { part: 'Grill Fan', code: 'LACJAE', defect: 'Wrong Parts' },
+            { part: 'Door Lamp(Cover)', code: 'LACVCU', defect: 'No Power' },
+            { part: 'Door(F)', code: 'LACXA1', defect: 'Distance' },
+            { part: 'Door(F)', code: 'LACXA1', defect: 'Gap' },
+            { part: 'Door(F)', code: 'LACXAE', defect: 'Wrong Parts' },
+            { part: 'Door(F)', code: 'LACXAK', defect: 'Burr' },
+            { part: 'Door(F)', code: 'LACXAK', defect: 'Material' },
+            { part: 'Door(F)', code: 'LACXAK', defect: 'Printed' },
+            { part: 'Door(F)', code: 'LACXAL', defect: 'Scratch' },
+            { part: 'Door(F)', code: 'LACXAM', defect: 'Dent' },
+            { part: 'Door(F)', code: 'LACXAP', defect: 'PU Leakage' },
+            { part: 'Door(F)', code: 'LACXB6', defect: 'Opening' },
+            { part: 'Door(F)', code: 'LACXB6', defect: 'Closing force' },
+            { part: 'Door(F)', code: 'LACXB9', defect: 'F' },
+            { part: 'Door(F)', code: 'LACXB9', defect: 'R Uneven' },
+            { part: 'Door(R)', code: 'LADAA1', defect: 'Distance' },
+            { part: 'Door(R)', code: 'LADAA1', defect: 'Gap' },
+            { part: 'Door(R)', code: 'LADAA8', defect: 'Foreign Substance' },
+            { part: 'Door(R)', code: 'LADAA8', defect: 'Dirty' },
+            { part: 'Door(R)', code: 'LADAAD', defect: 'Missing' },
+            { part: 'Door(R)', code: 'LADAAE', defect: 'Wrong Parts' },
+            { part: 'Door(R)', code: 'LADAAK', defect: 'Burr' },
+            { part: 'Door(R)', code: 'LADAAK', defect: 'Material' },
+            { part: 'Door(R)', code: 'LADAAK', defect: 'Printed' },
+            { part: 'Door(R)', code: 'LADAAL', defect: 'Scratch' },
+            { part: 'Door(R)', code: 'LADAAM', defect: 'Dent' },
+            { part: 'Door(R)', code: 'LADAAP', defect: 'PU Leakage' },
+            { part: 'Door Liner(F)', code: 'LADCA8', defect: 'Foreign Substance' },
+            { part: 'Door Liner(F)', code: 'LADCA8', defect: 'Dirty' },
+            { part: 'Door Liner(F)', code: 'LADCAB', defect: 'Crack' },
+            { part: 'Door Liner(F)', code: 'LADCAB', defect: 'Tear' },
+            { part: 'Door Liner(F)', code: 'LADCAL', defect: 'Scratch' },
+            { part: 'Door Liner(F)', code: 'LADCAM', defect: 'Dent' },
+            { part: 'Door Liner(F)', code: 'LADCAP', defect: 'PU Leakage' },
+            { part: 'Door Liner(F)', code: 'LADCAV', defect: 'Bulging' },
+            { part: 'Door Liner(R)', code: 'LADEAL', defect: 'Scratch' },
+            { part: 'Door Liner(R)', code: 'LADEAM', defect: 'Dent' },
+            { part: 'Door Liner(R)', code: 'LADEAP', defect: 'PU Leakage' },
+            { part: 'Door Liner(R)', code: 'LADEAV', defect: 'Bulging' },
+            { part: 'Door Magnet', code: 'LADGAD', defect: 'Missing' },
+            { part: 'Door Cooling', code: 'LADHA1', defect: 'Distance' },
+            { part: 'Door Cooling', code: 'LADHA1', defect: 'Gap' },
+            { part: 'Door Cooling', code: 'LADHAB', defect: 'Crack' },
+            { part: 'Door Cooling', code: 'LADHAB', defect: 'Tear' },
+            { part: 'Door Cooling', code: 'LADHAL', defect: 'Scratch' },
+            { part: 'Door Cooling', code: 'LADHAM', defect: 'Dent' },
+            { part: 'Door Cooling', code: 'LADHAP', defect: 'PU Leakage' },
+            { part: 'Dispenser', code: 'LADSA7', defect: 'Uneven' },
+            { part: 'Dispenser', code: 'LADSA7', defect: 'Stick Out(Parts)' },
+            { part: 'Dispenser', code: 'LADSAE', defect: 'Wrong Parts' },
+            { part: 'Dispenser', code: 'LADSAQ', defect: 'Not working Properly' },
+            { part: 'Dispenser Lamp', code: 'LADTBR', defect: 'Button noise' },
+            { part: 'Dispenser Lamp', code: 'LADTCU', defect: 'No Power' },
+            { part: 'Display', code: 'LADVA0', defect: 'Coming off' },
+            { part: 'Display', code: 'LADVA0', defect: 'Not inserting' },
+            { part: 'Display', code: 'LADVA1', defect: 'Distance' },
+            { part: 'Display', code: 'LADVA1', defect: 'Gap' },
+            { part: 'Display', code: 'LADVAD', defect: 'Missing' },
+            { part: 'Display', code: 'LADVAE', defect: 'Wrong Parts' },
+            { part: 'Display', code: 'LADVAQ', defect: 'Not working Properly' },
+            { part: 'Display', code: 'LADVCU', defect: 'No Power' },
+            { part: 'Display(Error Code)', code: 'LADXLA', defect: 'OD' },
+            { part: 'Display(Error Code)', code: 'LADXLH', defect: 'CO' },
+            { part: 'Display(Error Code)', code: 'LADXLL', defect: 'RS' },
+            { part: 'Display(Error Code)', code: 'LADXLP', defect: 'CF' },
+            { part: 'Display(Error Code)', code: 'LADXLS', defect: 'FF' },
+            { part: 'Display(Error Code)', code: 'LADXLT', defect: 'FS' },
+            { part: 'Display(Error Code)', code: 'LADXLU', defect: 'FV' },
+            { part: 'Display(Error Code)', code: 'LADXLV', defect: 'HS' },
+            { part: 'Display(Error Code)', code: 'LADXLX', defect: 'IF' },
+            { part: 'Display(Error Code)', code: 'LADXLZ', defect: 'IS' },
+            { part: 'Display(Error Code)', code: 'LADXM0', defect: 'RF' },
+            { part: 'Display(Error Code)', code: 'LADXM3', defect: 'RT' },
+            { part: 'Display(Error Code)', code: 'LADXM4', defect: 'IT' },
+            { part: 'Display(Error Code)', code: 'LADXM5', defect: 'E1' },
+            { part: 'Display(Error Code)', code: 'LADXM7', defect: 'E2' },
+            { part: 'Display(Error Code)', code: 'LADXM8', defect: 'E3' },
+            { part: 'Display(Error Code)', code: 'LADXM9', defect: 'E4' },
+            { part: 'Display(Error Code)', code: 'LADXMA', defect: 'E5' },
+            { part: 'Display(Error Code)', code: 'LADXMC', defect: 'E6' },
+            { part: 'Display(Error Code)', code: 'LADXMD', defect: 'E7' },
+            { part: 'Display(Error Code)', code: 'LADXME', defect: 'E8' },
+            { part: 'Display(Error Code)', code: 'LADXMF', defect: 'FDS' },
+            { part: 'Display(Error Code)', code: 'LADXMG', defect: 'GF' },
+            { part: 'Display(Error Code)', code: 'LADXMH', defect: 'ID' },
+            { part: 'Display(Error Code)', code: 'LADXMJ', defect: 'IRS' },
+            { part: 'Display(Error Code)', code: 'LADXMP', defect: 'IU' },
+            { part: 'Display(Error Code)', code: 'LADXMQ', defect: 'RDS' },
+            { part: 'Display(Error Code)', code: 'LADXMR', defect: 'SS' },
+            { part: 'Display(Error Code)', code: 'LADXMS', defect: 'UV' },
+            { part: 'Display(Error Code)', code: 'LADXMT', defect: 'RV' },
+            { part: 'Display(Error Code)', code: 'LADXMU', defect: 'D1' },
+            { part: 'Display(Error Code)', code: 'LADXMV', defect: 'D2' },
+            { part: 'Display(Error Code)', code: 'LADXMW', defect: 'BU' },
+            { part: 'Display(Error Code)', code: 'LADXMX', defect: 'F1' },
+            { part: 'Display(Error Code)', code: 'LADXMY', defect: 'F2' },
+            { part: 'Display(Error Code)', code: 'LADXMZ', defect: 'H1' },
+            { part: 'Display(Error Code)', code: 'LADXN5', defect: 'H2' },
+            { part: 'Display(Error Code)', code: 'LADXN8', defect: 'NC' },
+            { part: 'Display(Error Code)', code: 'LADXN9', defect: 'LS' },
+            { part: 'Display(Error Code)', code: 'LADXNA', defect: 'US' },
+            { part: 'Display(Error Code)', code: 'LADXNB', defect: 'LF' },
+            { part: 'Display(Error Code)', code: 'LADXNE', defect: 'SD' },
+            { part: 'Display(Error Code)', code: 'LADXNF', defect: 'PS' },
+            { part: 'Display(Error Code)', code: 'LADXNG', defect: 'IL' },
+            { part: 'Display(Error Code)', code: 'LADXNH', defect: 'IC' },
+            { part: 'Display(Error Code)', code: 'LADXNJ', defect: 'UC' },
+            { part: 'Display(Error Code)', code: 'LADXNK', defect: 'UF' },
+            { part: 'Display(Error Code)', code: 'LADXNL', defect: 'SL' },
+            { part: 'Display(Error Code)', code: 'LADXNR', defect: 'TH' },
+            { part: 'Display(Error Code)', code: 'LADXP4', defect: 'ST' },
+            { part: 'Display(Error Code)', code: 'LADXQG', defect: 'CS' },
+            { part: 'Label', code: 'LADYAB', defect: 'Crack' },
+            { part: 'Label', code: 'LADYAB', defect: 'Tear' },
+            { part: 'Label', code: 'LADYAD', defect: 'Missing' },
+            { part: 'Label', code: 'LADYAE', defect: 'Wrong Parts' },
+            { part: 'Label', code: 'LADYAN', defect: 'Tilt' },
+            { part: 'Leg', code: 'LADZAD', defect: 'Missing' },
+            { part: 'Leg', code: 'LADZAP', defect: 'PU Leakage' },
+            { part: 'Lead Switch', code: 'LAEAAP', defect: 'PU Leakage' },
+            { part: 'Lead Switch', code: 'LAEAAQ', defect: 'Not working Properly' },
+            { part: 'Basket', code: 'LAEFA0', defect: 'Coming off' },
+            { part: 'Basket', code: 'LAEFA0', defect: 'Not inserting' },
+            { part: 'Basket', code: 'LAEFA8', defect: 'Foreign Substance' },
+            { part: 'Basket', code: 'LAEFA8', defect: 'Dirty' },
+            { part: 'Basket', code: 'LAEFAB', defect: 'Crack' },
+            { part: 'Basket', code: 'LAEFAB', defect: 'Tear' },
+            { part: 'Basket', code: 'LAEFAD', defect: 'Missing' },
+            { part: 'Basket', code: 'LAEFAE', defect: 'Wrong Parts' },
+            { part: 'Basket', code: 'LAEFAK', defect: 'Burr' },
+            { part: 'Basket', code: 'LAEFAK', defect: 'Material' },
+            { part: 'Basket', code: 'LAEFAK', defect: 'Printed' },
+            { part: 'Basket', code: 'LAEFAL', defect: 'Scratch' },
+            { part: 'Basket', code: 'LAEFAM', defect: 'Dent' },
+            { part: 'Owner Manual', code: 'LAEPAD', defect: 'Missing' },
+            { part: 'Owner Manual', code: 'LAEPAE', defect: 'Wrong Parts' },
+            { part: 'Shelf', code: 'LAERA0', defect: 'Coming off' },
+            { part: 'Shelf', code: 'LAERA0', defect: 'Not inserting' },
+            { part: 'Shelf', code: 'LAERAB', defect: 'Crack' },
+            { part: 'Shelf', code: 'LAERAB', defect: 'Tear' },
+            { part: 'Shelf', code: 'LAERAD', defect: 'Missing' },
+            { part: 'Shelf', code: 'LAERAE', defect: 'Wrong Parts' },
+            { part: 'Shelf', code: 'LAERAL', defect: 'Scratch' },
+            { part: 'Vegetable Box', code: 'LAEVA8', defect: 'Foreign Substance' },
+            { part: 'Vegetable Box', code: 'LAEVA8', defect: 'Dirty' },
+            { part: 'Vegetable Box', code: 'LAEVAB', defect: 'Crack' },
+            { part: 'Vegetable Box', code: 'LAEVAB', defect: 'Tear' },
+            { part: 'Vegetable Box', code: 'LAEVAD', defect: 'Missing' },
+            { part: 'Vegetable Box', code: 'LAEVAE', defect: 'Wrong Parts' },
+            { part: 'Vegetable Box', code: 'LAEVAL', defect: 'Scratch' },
+            { part: 'Energy Lable', code: 'LAEZAB', defect: 'Crack' },
+            { part: 'Energy Lable', code: 'LAEZAB', defect: 'Tear' },
+            { part: 'Energy Lable', code: 'LAEZAD', defect: 'Missing' },
+            { part: 'Energy Lable', code: 'LAEZAE', defect: 'Wrong Parts' },
+            { part: 'Energy Lable', code: 'LAEZAN', defect: 'Tilt' },
+            { part: 'Eva Screw', code: 'LAFEAD', defect: 'Missing' },
+            { part: 'Inner Case(F)', code: 'LAFMA1', defect: 'Distance' },
+            { part: 'Inner Case(F)', code: 'LAFMA1', defect: 'Gap' },
+            { part: 'Inner Case(F)', code: 'LAFMA8', defect: 'Foreign Substance' },
+            { part: 'Inner Case(F)', code: 'LAFMA8', defect: 'Dirty' },
+            { part: 'Inner Case(F)', code: 'LAFMAB', defect: 'Crack' },
+            { part: 'Inner Case(F)', code: 'LAFMAB', defect: 'Tear' },
+            { part: 'Inner Case(F)', code: 'LAFMAL', defect: 'Scratch' },
+            { part: 'Inner Case(F)', code: 'LAFMAM', defect: 'Dent' },
+            { part: 'Inner Case(F)', code: 'LAFMAP', defect: 'PU Leakage' },
+            { part: 'Inner Case(F)', code: 'LAFMAV', defect: 'Bulging' },
+            { part: 'Inner Case(Front-C)', code: 'LAFPA1', defect: 'Distance' },
+            { part: 'Inner Case(Front-C)', code: 'LAFPA1', defect: 'Gap' },
+            { part: 'Inner Case(Front-C)', code: 'LAFPAL', defect: 'Scratch' },
+            { part: 'Inner Case(Front-C)', code: 'LAFPAM', defect: 'Dent' },
+            { part: 'Inner Case(Front-C)', code: 'LAFPAP', defect: 'PU Leakage' },
+            { part: 'Inner Case(R)', code: 'LAFSA1', defect: 'Distance' },
+            { part: 'Inner Case(R)', code: 'LAFSA1', defect: 'Gap' },
+            { part: 'Inner Case(R)', code: 'LAFSAB', defect: 'Crack' },
+            { part: 'Inner Case(R)', code: 'LAFSAB', defect: 'Tear' },
+            { part: 'Inner Case(R)', code: 'LAFSAL', defect: 'Scratch' },
+            { part: 'Inner Case(R)', code: 'LAFSAM', defect: 'Dent' },
+            { part: 'Inner Case(R)', code: 'LAFSAP', defect: 'PU Leakage' },
+            { part: 'Inner Case(R)', code: 'LAFSAV', defect: 'Bulging' },
+            { part: 'Ice Maker', code: 'LAFYAB', defect: 'Crack' },
+            { part: 'Ice Maker', code: 'LAFYAB', defect: 'Tear' },
+            { part: 'Ice Maker', code: 'LAFYAD', defect: 'Missing' },
+            { part: 'Ice Maker', code: 'LAFYAE', defect: 'Wrong Parts' },
+            { part: 'Cap Deco(F)', code: 'LAGDA1', defect: 'Distance' },
+            { part: 'Cap Deco(F)', code: 'LAGDA1', defect: 'Gap' },
+            { part: 'Cap Deco(F)', code: 'LAGDA7', defect: 'Uneven' },
+            { part: 'Cap Deco(F)', code: 'LAGDA7', defect: 'Stick Out(Parts)' },
+            { part: 'Cap Deco(F)', code: 'LAGDAB', defect: 'Crack' },
+            { part: 'Cap Deco(F)', code: 'LAGDAB', defect: 'Tear' },
+            { part: 'Cap Deco(F)', code: 'LAGDAE', defect: 'Wrong Parts' },
+            { part: 'Cap Deco(F)', code: 'LAGDAL', defect: 'Scratch' },
+            { part: 'Cap Deco(F)', code: 'LAGDAM', defect: 'Dent' },
+            { part: 'Cap Deco(F)', code: 'LAGDAP', defect: 'PU Leakage' },
+            { part: 'Cap Deco(R)', code: 'LAGFA1', defect: 'Distance' },
+            { part: 'Cap Deco(R)', code: 'LAGFA1', defect: 'Gap' },
+            { part: 'Cap Deco(R)', code: 'LAGFAB', defect: 'Crack' },
+            { part: 'Cap Deco(R)', code: 'LAGFAB', defect: 'Tear' },
+            { part: 'Cap Deco(R)', code: 'LAGFAE', defect: 'Wrong Parts' },
+            { part: 'Cap Deco(R)', code: 'LAGFAL', defect: 'Scratch' },
+            { part: 'Cap Deco(R)', code: 'LAGFAM', defect: 'Dent' },
+            { part: 'Cap Deco(R)', code: 'LAGFAP', defect: 'PU Leakage' },
+            { part: 'Control Box', code: 'LAGQA0', defect: 'Coming off' },
+            { part: 'Control Box', code: 'LAGQA0', defect: 'Not inserting' },
+            { part: 'Control Box', code: 'LAGQA1', defect: 'Distance' },
+            { part: 'Control Box', code: 'LAGQA1', defect: 'Gap' },
+            { part: 'Control Box', code: 'LAGQA7', defect: 'Uneven' },
+            { part: 'Control Box', code: 'LAGQA7', defect: 'Stick Out(Parts)' },
+            { part: 'Control Box', code: 'LAGQAQ', defect: 'Not working Properly' },
+            { part: 'Case Lamp(Cover)', code: 'LAGSA0', defect: 'Coming off' },
+            { part: 'Case Lamp(Cover)', code: 'LAGSA0', defect: 'Not inserting' },
+            { part: 'Case Lamp(Cover)', code: 'LAGSA1', defect: 'Distance' },
+            { part: 'Case Lamp(Cover)', code: 'LAGSA1', defect: 'Gap' },
+            { part: 'Case Lamp(Cover)', code: 'LAGSA7', defect: 'Uneven' },
+            { part: 'Case Lamp(Cover)', code: 'LAGSA7', defect: 'Stick Out(Parts)' },
+            { part: 'Case Lamp(Cover)', code: 'LAGSAB', defect: 'Crack' },
+            { part: 'Case Lamp(Cover)', code: 'LAGSAB', defect: 'Tear' },
+            { part: 'Case Lamp(Cover)', code: 'LAGSAP', defect: 'PU Leakage' },
+            { part: 'Case Lamp(Cover)', code: 'LAGSAQ', defect: 'Not working Properly' },
+            { part: 'Deodorizer', code: 'LAHEAD', defect: 'Missing' },
+            { part: 'Flange', code: 'LAHKA1', defect: 'Distance' },
+            { part: 'Flange', code: 'LAHKA1', defect: 'Gap' },
+            { part: 'Flange', code: 'LAHKA7', defect: 'Uneven' },
+            { part: 'Flange', code: 'LAHKA7', defect: 'Stick Out(Parts)' },
+            { part: 'Flange', code: 'LAHKA8', defect: 'Foreign Substance' },
+            { part: 'Flange', code: 'LAHKA8', defect: 'Dirty' },
+            { part: 'Flange', code: 'LAHKAL', defect: 'Scratch' },
+            { part: 'Flange', code: 'LAHKAM', defect: 'Dent' },
+            { part: 'Flange', code: 'LAHKAP', defect: 'PU Leakage' },
+            { part: 'Home Bar Gasket', code: 'LAJDA0', defect: 'Coming off' },
+            { part: 'Home Bar Gasket', code: 'LAJDA0', defect: 'Not inserting' },
+            { part: 'Home Bar Gasket', code: 'LAJDA5', defect: 'Wavy' },
+            { part: 'Home Bar Gasket', code: 'LAJDA5', defect: 'Bending' },
+            { part: 'Home Bar Gasket', code: 'LAJDA5', defect: 'Sink' },
+            { part: 'Home Bar Gasket', code: 'LAJDAB', defect: 'Crack' },
+            { part: 'Home Bar Gasket', code: 'LAJDAB', defect: 'Tear' },
+            { part: 'Home Bar Gasket', code: 'LAJDAD', defect: 'Missing' },
+            { part: 'Home Bar Deco', code: 'LAJEA0', defect: 'Coming off' },
+            { part: 'Home Bar Deco', code: 'LAJEA0', defect: 'Not inserting' },
+            { part: 'Home Bar Deco', code: 'LAJEA5', defect: 'Wavy' },
+            { part: 'Home Bar Deco', code: 'LAJEA5', defect: 'Bending' },
+            { part: 'Home Bar Deco', code: 'LAJEA5', defect: 'Sink' },
+            { part: 'Home Bar Deco', code: 'LAJEAD', defect: 'Missing' },
+            { part: 'Home Bar Button', code: 'LAJFAQ', defect: 'Not working Properly' },
+            { part: 'Hinge Cover', code: 'LAJNA0', defect: 'Coming off' },
+            { part: 'Hinge Cover', code: 'LAJNA0', defect: 'Not inserting' },
+            { part: 'Hinge Cover', code: 'LAJNA1', defect: 'Distance' },
+            { part: 'Hinge Cover', code: 'LAJNA1', defect: 'Gap' },
+            { part: 'Hinge Cover', code: 'LAJNA7', defect: 'Uneven' },
+            { part: 'Hinge Cover', code: 'LAJNA7', defect: 'Stick Out(Parts)' },
+            { part: 'Hinge Cover', code: 'LAJNAB', defect: 'Crack' },
+            { part: 'Hinge Cover', code: 'LAJNAB', defect: 'Tear' },
+            { part: 'Hinge Cover', code: 'LAJNAD', defect: 'Missing' },
+            { part: 'Hinge Cover', code: 'LAJNAE', defect: 'Wrong Parts' },
+            { part: 'Hinge Cover', code: 'LAJNAL', defect: 'Scratch' },
+            { part: 'Hinge Cover Screw', code: 'LAJPAD', defect: 'Missing' },
+            { part: 'etc', code: 'LAJTA0', defect: 'Coming off' },
+            { part: 'etc', code: 'LAJTA0', defect: 'Not inserting' },
+            { part: 'etc', code: 'LAJTA1', defect: 'Distance' },
+            { part: 'etc', code: 'LAJTA1', defect: 'Gap' },
+            { part: 'etc', code: 'LAJTA5', defect: 'Wavy' },
+            { part: 'etc', code: 'LAJTA5', defect: 'Bending' },
+            { part: 'etc', code: 'LAJTA5', defect: 'Sink' },
+            { part: 'etc', code: 'LAJTA7', defect: 'Uneven' },
+            { part: 'etc', code: 'LAJTA7', defect: 'Stick Out(Parts)' },
+            { part: 'etc', code: 'LAJTA8', defect: 'Foreign Substance' },
+            { part: 'etc', code: 'LAJTA8', defect: 'Dirty' },
+            { part: 'etc', code: 'LAJTA9', defect: 'Interference' },
+            { part: 'etc', code: 'LAJTAA', defect: 'Not fasten Properly' },
+            { part: 'etc', code: 'LAJTAA', defect: 'Misassembly' },
+            { part: 'etc', code: 'LAJTAB', defect: 'Crack' },
+            { part: 'etc', code: 'LAJTAB', defect: 'Tear' },
+            { part: 'etc', code: 'LAJTAD', defect: 'Missing' },
+            { part: 'etc', code: 'LAJTAE', defect: 'Wrong Parts' },
+            { part: 'etc', code: 'LAJTAK', defect: 'Burr' },
+            { part: 'etc', code: 'LAJTAK', defect: 'Material' },
+            { part: 'etc', code: 'LAJTAK', defect: 'Printed' },
+            { part: 'etc', code: 'LAJTAL', defect: 'Scratch' },
+            { part: 'etc', code: 'LAJTAM', defect: 'Dent' },
+            { part: 'etc', code: 'LAJTAN', defect: 'Tilt' },
+            { part: 'etc', code: 'LAJTAP', defect: 'PU Leakage' },
+            { part: 'etc', code: 'LAJTAQ', defect: 'Not working Properly' },
+            { part: 'etc', code: 'LAJTAR', defect: 'Noise' },
+            { part: 'etc', code: 'LAJTAS', defect: 'Leakage' },
+            { part: 'etc', code: 'LAJTAT', defect: 'Flame' },
+            { part: 'etc', code: 'LAJTAT', defect: 'Burn' },
+            { part: 'etc', code: 'LAJTAV', defect: 'Bulging' },
+            { part: 'etc', code: 'LAJTB6', defect: 'Opening' },
+            { part: 'etc', code: 'LAJTB6', defect: 'Closing force' },
+            { part: 'etc', code: 'LAJTB9', defect: 'F' },
+            { part: 'etc', code: 'LAJTB9', defect: 'R Uneven' },
+            { part: 'etc', code: 'LAJTBD', defect: 'Side Uneven' },
+            { part: 'etc', code: 'LAJTBK', defect: 'Color' },
+            { part: 'etc', code: 'LAJTBR', defect: 'Button noise' },
+            { part: 'etc', code: 'LAJTBW', defect: 'Voice Recognition' },
+            { part: 'etc', code: 'LAJTC0', defect: 'Clogging' },
+            { part: 'etc', code: 'LAJTC0', defect: 'Choking' },
+            { part: 'etc', code: 'LAJTCK', defect: 'Not Cooling Properly' },
+            { part: 'etc', code: 'LAJTCU', defect: 'No Power' },
+            { part: 'Leg Screw', code: 'LAKEAD', defect: 'Missing' },
+            { part: 'Front-C', code: 'LALEA1', defect: 'Distance' },
+            { part: 'Front-C', code: 'LALEA1', defect: 'Gap' },
+            { part: 'Front-C', code: 'LALEA7', defect: 'Uneven' },
+            { part: 'Front-C', code: 'LALEA7', defect: 'Stick Out(Parts)' },
+            { part: 'Front-C', code: 'LALEAL', defect: 'Scratch' },
+            { part: 'Front-C', code: 'LALEAM', defect: 'Dent' },
+            { part: 'Front-C', code: 'LALEAP', defect: 'PU Leakage' }
+        ];
+
+        // Extract unique parts from LQC data
+        let uniqueParts = [];
+        try {
+            const partsMap = new Map();
+            lqcData.forEach(item => {
+                if (item.part && !partsMap.has(item.part)) {
+                    partsMap.set(item.part, true);
+                    uniqueParts.push(item.part);
+                }
+            });
+            console.log('✓ Extracted unique parts:', uniqueParts.length);
+        } catch (error) {
+            console.error('Error extracting unique parts:', error);
+            // Fallback: use Set method
+            uniqueParts = [...new Set(lqcData.map(item => item.part))];
+        }
+
+        // Create pagination for parts
+        const ITEMS_PER_PAGE = 17;
+        let partPages = [];
+        try {
+            for (let i = 0; i < uniqueParts.length; i += ITEMS_PER_PAGE) {
+                const page = uniqueParts.slice(i, i + ITEMS_PER_PAGE);
+                // Fill remaining slots with empty strings
+                while (page.length < ITEMS_PER_PAGE) {
+                    page.push('');
+                }
+                partPages.push(page);
+            }
+            console.log('✓ Created pages:', partPages.length);
+            if (partPages.length > 0) {
+                console.log('✓ First page items:', partPages[0].filter(p => p !== '').length);
+            }
+        } catch (error) {
+            console.error('Error creating pages:', error);
+        }
+
+        // State variables
+        let currentPage = 0;
+        let selectedPart = null;
+        let selectedDefect = null;
+        let isShowingLevel3 = false;
+        let isSpacePressed = false;
+        let repairHistory = [];
+
+        // Audio Recording - Real WebSocket + Microphone
+        let isRecording = false;
+        let isProcessing = false;
+        let audioLevel = 0;
+        let mockPredictions = [];
+
+        // WebSocket & Audio state
+        let ws = null;
+        let mediaStream = null;
+        let audioContext = null;
+        let scriptProcessor = null;
+        let audioChunks = [];
+        // Auto-detect WebSocket URL based on how the page was loaded
+        const WS_URL = (function () {
+            if (window.location.protocol === 'file:') {
+                return 'ws://localhost:8000/ws';
+            }
+            const wsProto = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            return wsProto + '//' + window.location.host + '/ws';
+        })();
+        console.log('WebSocket URL:', WS_URL);
+        let wsConnected = false;
+        let micReady = false;
+        let pendingAutoConfirm = false;
+        let predictedPart = null;       // Track AI-predicted part for highlighting
+        let predictedDefect = null;     // Track AI-predicted defect for highlighting
+        let predictedConfidence = 0;    // Confidence percentage for display
+        let awaitingVoiceConfirm = false;   // Waiting for voice "confirm" after defect selected
+        let pendingDefectForConfirm = null; // Defect waiting to be confirmed {defect, code}
+
+        // ============== WebSocket Connection ==============
+        function connectWebSocket() {
+            if (ws && ws.readyState === WebSocket.OPEN) return;
+
+            console.log('Attempting WebSocket connection to', WS_URL);
+            document.getElementById('errorText').textContent = 'Connecting to server...';
+
+            try {
+                ws = new WebSocket(WS_URL);
+                ws.binaryType = 'arraybuffer';
+            } catch (err) {
+                console.error('WebSocket creation failed:', err);
+                document.getElementById('errorText').textContent = 'WebSocket creation failed: ' + err.message;
+                setTimeout(connectWebSocket, 5000);
+                return;
+            }
+
+            ws.onopen = () => {
+                wsConnected = true;
+                console.log('WebSocket connected to', WS_URL);
+                document.getElementById('errorText').textContent = '';
+                setStatus('CONNECTED');
+                document.getElementById('statusText').style.color = '#22c55e';
+                setTimeout(() => {
+                    if (!isRecording) {
+                        setStatus('READY', 'ready');
+                    }
+                }, 1500);
+            };
+
+            ws.onmessage = (event) => {
+                try {
+                    const response = JSON.parse(event.data);
+                    handleModelResponse(response);
+                } catch (e) {
+                    console.error('Error parsing WS message:', e);
+                }
+            };
+
+            ws.onerror = (err) => {
+                console.error('WebSocket error:', err);
+                wsConnected = false;
+                document.getElementById('errorText').textContent = 'Connection failed - retrying...';
+            };
+
+            ws.onclose = (event) => {
+                wsConnected = false;
+                console.log('WebSocket closed (code:', event.code, 'reason:', event.reason, ')');
+                document.getElementById('errorText').textContent = 'Disconnected - reconnecting in 3s...';
+                setTimeout(connectWebSocket, 3000);
+            };
+        }
+
+        // ============== Microphone Setup ==============
+        let nativeSampleRate = 44100; // will be updated after mic init
+        let micSetupAttempted = false;
+
+        async function setupMicrophone() {
+            if (micSetupAttempted && micReady) return;
+            micSetupAttempted = true;
+            console.log('Requesting microphone access...');
+            try {
+                if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                    throw new Error('getUserMedia not supported');
+                }
+                mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                console.log('Mic access granted, tracks:', mediaStream.getAudioTracks().length);
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                nativeSampleRate = audioContext.sampleRate;
+                micReady = true;
+                console.log('Mic ready, sample rate:', nativeSampleRate);
+                document.getElementById('errorText').textContent = '';
+            } catch (err) {
+                console.error('Mic failed:', err.name, err.message);
+                micReady = false;
+                document.getElementById('errorText').textContent = 'Mic: ' + err.message;
+            }
+        }
+
+        // Resample audio from native rate to 16kHz for the model
+        function resampleTo16k(audioData, fromRate) {
+            if (fromRate === 16000) return audioData;
+            const ratio = fromRate / 16000;
+            const newLength = Math.round(audioData.length / ratio);
+            const result = new Float32Array(newLength);
+            for (let i = 0; i < newLength; i++) {
+                const srcIndex = i * ratio;
+                const srcIndexFloor = Math.floor(srcIndex);
+                const srcIndexCeil = Math.min(srcIndexFloor + 1, audioData.length - 1);
+                const frac = srcIndex - srcIndexFloor;
+                result[i] = audioData[srcIndexFloor] * (1 - frac) + audioData[srcIndexCeil] * frac;
+            }
+            return result;
+        }
+
+        // ============== Model class name to LQC name mapping ==============
+        const modelToLQC = {
+            'Cap_DecoF': 'Cap Deco(F)', 'Cap_DecoR': 'Cap Deco(R)',
+            'Case_LampCover': 'Case Lamp(Cover)', 'Cover_TV': 'Cover T/V',
+            'DoorF': 'Door(F)', 'DoorR': 'Door(R)',
+            'Door_LampCover': 'Door Lamp(Cover)', 'Door_LinerF': 'Door Liner(F)',
+            'Door_LinerR': 'Door Liner(R)', 'Door_Cooling': 'Door Cooling',
+            'Door_Magnet': 'Door Magnet', 'Dispenser_Lamp': 'Dispenser Lamp',
+            'Display_Error_Code': 'Display(Error Code)',
+            'GasketF': 'Gasket(F)', 'GasketR': 'Gasket(R)',
+            'IMakerF': 'I/Maker(F)', 'Ice_Maker': 'Ice Maker',
+            'Inner_CaseF': 'Inner Case(F)', 'Inner_CaseR': 'Inner Case(R)',
+            'Inner_CaseFront-C': 'Inner Case(Front-C)',
+            'OCase': 'O/Case', 'MarkLogo': 'Mark/Logo',
+            'Egg_Tray': 'Egg Tray', 'Eva_Screw': 'Eva Screw',
+            'Grill_Fan': 'Grill Fan', 'Tray_Meat': 'Tray Meat',
+            'Control_Box': 'Control Box', 'Lead_Switch': 'Lead Switch',
+            'Leg_Screw': 'Leg Screw', 'LVS_Sticker': 'LVS Sticker',
+            'Owner_Manual': 'Owner Manual', 'Energy_Lable': 'Energy Lable',
+            'Specification_Label': 'Specification Label',
+            'Warning_Label': 'Warning Label', 'Vegetable_Box': 'Vegetable Box',
+            'Home_Bar_Gasket': 'Home Bar Gasket', 'Home_Bar_Deco': 'Home Bar Deco',
+            'Home_Bar_Button': 'Home Bar Button', 'Hinge_Cover': 'Hinge Cover',
+            'Hinge_Cover_Screw': 'Hinge Cover Screw',
+            'Hinge-C_Screw': 'Hinge C Screw',
+            'Front-L_Screw': 'Front-L Screw',
+            'Foreign_Substance': 'Foreign Substance',
+            'Coming_off': 'Coming off', 'Not_inserting': 'Not inserting',
+            'Not_fasten_Properly': 'Not fasten Properly',
+            'Not_working_properly': 'Not working Properly',
+            'Not_Cooling_Properly': 'Not Cooling Properly',
+            'PU_Leakage': 'PU Leakage', 'Wrong_Parts': 'Wrong Parts',
+            'Button_noise': 'Button noise', 'Voice_Recognition': 'Voice Recognition',
+            'Closing_Force': 'Closing force', 'F_R_Uneven': 'F',
+            'Side_Uneven': 'Side Uneven', 'Stick_OutParts': 'Stick Out(Parts)'
+        };
+
+        function normalizeModelWord(word) {
+            if (modelToLQC[word]) return modelToLQC[word];
+            // Generic: replace underscores with spaces
+            return word.replace(/_/g, ' ');
+        }
+
+        // Find best match in uniqueParts for a model word
+        function findPartMatch(word) {
+            const normalized = normalizeModelWord(word).toLowerCase();
+            // Exact match
+            let match = uniqueParts.find(p => p.toLowerCase() === normalized);
+            if (match) return match;
+            // Partial match
+            match = uniqueParts.find(p => p.toLowerCase().includes(normalized) || normalized.includes(p.toLowerCase()));
+            return match || null;
+        }
+
+        // Find best match in defects list for a model word
+        function findDefectMatch(word, defects) {
+            const normalized = normalizeModelWord(word).toLowerCase();
+            let match = defects.find(d => d.defect.toLowerCase() === normalized);
+            if (match) return match;
+            match = defects.find(d => d.defect.toLowerCase().includes(normalized) || normalized.includes(d.defect.toLowerCase()));
+            return match || null;
+        }
+
+        // ============== Handle Model Response ==============
+        function handleModelResponse(response) {
+            isProcessing = false;
+            document.getElementById('predictionsPanel').style.display = 'none';
+
+            if (response.status === 'silence') {
+                if (awaitingVoiceConfirm) {
+                    setStatus('Too quiet', 'result');
+                    document.getElementById('statusHint').textContent = 'Say CONFIRM to log';
+                    setTimeout(() => { if (!isRecording && awaitingVoiceConfirm) {
+                        setStatus(`${pendingDefectForConfirm.defect}`, 'result');
+                        document.getElementById('statusHint').textContent = 'Say CONFIRM to log';
+                    }}, 1200);
+                } else {
+                    setStatus('Retry', 'result');
+                    document.getElementById('statusHint').textContent = 'Too quiet - speak louder';
+                    setTimeout(() => { if (!isRecording) setStatus('READY', 'ready'); }, 2500);
+                }
+                return;
+            }
+            if (response.error) {
+                if (awaitingVoiceConfirm) {
+                    document.getElementById('statusHint').textContent = 'Say CONFIRM to log';
+                } else {
+                    setStatus('Retry', 'result');
+                    document.getElementById('statusHint').textContent = response.error;
+                    setTimeout(() => { if (!isRecording) setStatus('READY', 'ready'); }, 3000);
+                }
+                return;
+            }
+
+            const predictions = response.predictions || [];
+            const topPrediction = predictions[0];
+
+            if (!topPrediction || topPrediction.probability < 0.15) {
+                if (awaitingVoiceConfirm) {
+                    // Low confidence during confirm = word not in model vocab (e.g. "confirm")
+                    awaitingVoiceConfirm = false;
+                    const defectToConfirm = pendingDefectForConfirm;
+                    pendingDefectForConfirm = null;
+                    confirmDefect();
+                    setStatus('LOGGED', 'result');
+                    document.getElementById('statusHint').textContent = 'Defect saved';
+                    setTimeout(() => { if (!isRecording) setStatus('READY', 'ready'); }, 1200);
+                } else {
+                    setStatus('Retry', 'result');
+                    document.getElementById('statusHint').textContent = 'Could not recognize - try again';
+                    setTimeout(() => { if (!isRecording) setStatus('READY', 'ready'); }, 2500);
+                }
+                return;
+            }
+
+            const rawWord = topPrediction.class;
+            const confidence = Math.round(topPrediction.probability * 100);
+            const displayWord = normalizeModelWord(rawWord);
+
+            // ============== Voice Confirm Check ==============
+            // If awaiting confirmation after defect selection, check if this is a confirm
+            if (awaitingVoiceConfirm && pendingDefectForConfirm && selectedPart) {
+                // Check if user said something that matches a DIFFERENT defect or component
+                const defects = getDefectsForPart(selectedPart);
+                const newDefectMatch = findDefectMatch(rawWord, defects);
+                const newPartMatch = findPartMatch(rawWord);
+
+                // If the recognized word matches the SAME defect already selected, treat as confirm
+                const isSameDefect = newDefectMatch && newDefectMatch.defect === pendingDefectForConfirm.defect;
+
+                if (newDefectMatch && !isSameDefect) {
+                    // User said a DIFFERENT defect — switch to it instead
+                    awaitingVoiceConfirm = false;
+                    pendingDefectForConfirm = null;
+                    predictedDefect = newDefectMatch.defect;
+                    predictedConfidence = confidence;
+                    setStatus(`${newDefectMatch.defect} - ${confidence}%`, 'result');
+                    document.getElementById('statusHint').textContent = 'Defect recognized';
+                    renderGrid();
+                    setTimeout(() => {
+                        predictedDefect = null;
+                        handleDefectClick(newDefectMatch.defect, newDefectMatch.code);
+                        awaitingVoiceConfirm = true;
+                        pendingDefectForConfirm = newDefectMatch;
+                        setStatus(`${newDefectMatch.defect} - ${confidence}%`, 'result');
+                        document.getElementById('statusHint').textContent = 'Say CONFIRM to log';
+                    }, 1200);
+                    return;
+                } else if (newPartMatch && !newDefectMatch) {
+                    // User said a new component — switch to it
+                    awaitingVoiceConfirm = false;
+                    pendingDefectForConfirm = null;
+                    isShowingLevel3 = false;
+                    selectedPart = null;
+                    selectedDefect = null;
+                    const partIndex = uniqueParts.indexOf(newPartMatch);
+                    currentPage = Math.floor(partIndex / ITEMS_PER_PAGE);
+                    predictedPart = newPartMatch;
+                    predictedConfidence = confidence;
+                    renderGrid();
+                    setStatus(`${newPartMatch} - ${confidence}%`, 'result');
+                    document.getElementById('statusHint').textContent = 'Switched to new component';
+                    setTimeout(() => {
+                        predictedPart = null;
+                        handlePartClick(newPartMatch);
+                        setStatus('READY', 'ready');
+                        document.getElementById('statusHint').textContent = 'Now say DEFECT name';
+                    }, 1200);
+                    return;
+                } else {
+                    // Word doesn't match any other defect or part — treat as CONFIRM
+                    awaitingVoiceConfirm = false;
+                    const defectToConfirm = pendingDefectForConfirm;
+                    pendingDefectForConfirm = null;
+                    confirmDefect();
+                    setStatus('LOGGED', 'result');
+                    document.getElementById('statusHint').textContent = 'Defect saved';
+                    setTimeout(() => { if (!isRecording) setStatus('READY', 'ready'); }, 1200);
+                    return;
+                }
+            }
+
+            // Try to match to LQC system
+            if (!isShowingLevel3) {
+                // Try Level 2 match (component)
+                const matchedPart = findPartMatch(rawWord);
+                if (matchedPart) {
+                    console.log('✅ Component classified:', matchedPart, confidence + '%');
+
+                    // Show component name AND confidence on the black status screen
+                    setStatus(`${matchedPart} - ${confidence}%`, 'result');
+                    document.getElementById('statusHint').textContent = 'Component recognized';
+
+                    // Navigate to the page containing this part
+                    const partIndex = uniqueParts.indexOf(matchedPart);
+                    currentPage = Math.floor(partIndex / ITEMS_PER_PAGE);
+
+                    // Set predicted highlight (yellow pulsing) — stay on Level 2 grid
+                    predictedPart = matchedPart;
+                    predictedConfidence = confidence;
+                    renderGrid(); // Re-render to show highlighted component on Level 2
+
+                    // After 1.2 seconds, auto-navigate to Level 3 (defects for this component)
+                    setTimeout(() => {
+                        predictedPart = null; // Clear prediction highlight
+                        handlePartClick(matchedPart); // Navigate to Level 3
+                        setStatus('READY', 'ready');
+                        document.getElementById('statusHint').textContent = 'Now say DEFECT name';
+                    }, 1200);
+                } else {
+                    // Show what was recognized even if not matched
+                    setStatus(`"${displayWord}" - ${confidence}%`, 'result');
+                    document.getElementById('statusHint').textContent = 'Not a component - try again';
+                    setTimeout(() => { if (!isRecording) setStatus('READY', 'ready'); }, 2500);
+                }
+
+            } else if (isShowingLevel3 && selectedPart) {
+                // Try Level 3 match (defect)
+                const defects = getDefectsForPart(selectedPart);
+                const matchedDefect = findDefectMatch(rawWord, defects);
+
+                if (matchedDefect) {
+                    // Show defect name AND confidence on the black status screen
+                    setStatus(`${matchedDefect.defect} - ${confidence}%`, 'result');
+                    document.getElementById('statusHint').textContent = 'Defect recognized';
+
+                    // Highlight the predicted defect in the grid
+                    predictedDefect = matchedDefect.defect;
+                    predictedConfidence = confidence;
+                    renderGrid(); // Re-render to show highlighted defect
+
+                    // After 1.2 seconds, select the defect and wait for voice confirm
+                    setTimeout(() => {
+                        predictedDefect = null; // Clear prediction highlight
+                        handleDefectClick(matchedDefect.defect, matchedDefect.code);
+
+                        // Enter voice confirm state — wait for user to say "confirm"
+                        awaitingVoiceConfirm = true;
+                        pendingDefectForConfirm = matchedDefect;
+                        setStatus(`${matchedDefect.defect} - ${confidence}%`, 'result');
+                        document.getElementById('statusHint').textContent = 'Say CONFIRM to log';
+                    }, 1200);
+                } else {
+                    // Maybe user said a new component - try part match
+                    const partMatch = findPartMatch(rawWord);
+                    if (partMatch) {
+                        // Go back to Level 2 grid first
+                        isShowingLevel3 = false;
+                        selectedPart = null;
+                        selectedDefect = null;
+
+                        // Navigate to the page containing this part
+                        const partIndex = uniqueParts.indexOf(partMatch);
+                        currentPage = Math.floor(partIndex / ITEMS_PER_PAGE);
+
+                        // Highlight the predicted component on Level 2
+                        predictedPart = partMatch;
+                        predictedConfidence = confidence;
+                        renderGrid();
+                        setStatus(`${partMatch} - ${confidence}%`, 'result');
+                        document.getElementById('statusHint').textContent = 'Switched to new component';
+
+                        // After 1.2 seconds, navigate to Level 3
+                        setTimeout(() => {
+                            predictedPart = null;
+                            handlePartClick(partMatch);
+                            setStatus('READY', 'ready');
+                            document.getElementById('statusHint').textContent = 'Now say DEFECT name';
+                        }, 1200);
+                    } else {
+                        // Show what was recognized even if not matched
+                        setStatus(`"${displayWord}" - ${confidence}%`, 'result');
+                        document.getElementById('statusHint').textContent = `Not a defect for ${selectedPart}`;
+                        setTimeout(() => { if (!isRecording) setStatus('READY', 'ready'); }, 2500);
+                    }
+                }
+            }
+        }
+
+        // Initialize - Ensure DOM is ready before rendering
+        function initialize() {
+            console.log('=== Initializing LQC System ===');
+            console.log('LQC Data entries:', lqcData.length);
+            console.log('Unique parts count:', uniqueParts.length);
+            console.log('Total pages:', partPages.length);
+
+            updateTime();
+            setInterval(updateTime, 1000);
+
+            renderGrid();
+
+            const gridElement = document.getElementById('defectGrid');
+            if (gridElement && gridElement.children.length === 0) {
+                setTimeout(() => { renderGrid(); }, 100);
+            }
+
+            // Connect to backend WebSocket
+            connectWebSocket();
+
+            // Microphone will be set up on first spacebar press (needs user gesture)
+
+            // Show connection status periodically
+            setInterval(() => {
+                const hint = document.getElementById('statusHint');
+                if (!isRecording && !isProcessing) {
+                    if (wsConnected) {
+                        hint.textContent = micReady ? 'Hold SPACE to speak' : 'Press SPACE to enable mic';
+                    } else {
+                        hint.textContent = 'Connecting to ws://localhost:8000/ws ...';
+                    }
+                }
+            }, 2000);
+
+            console.log('=== Initialization Complete ===');
+            if (uniqueParts.length > 0 && partPages.length > 0) {
+                console.log(`SUCCESS: Found ${uniqueParts.length} parts in ${partPages.length} pages`);
+            }
+        }
+
+        // Run initialization when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                try { initialize(); } catch (e) { console.error('Init error:', e); }
+            });
+        } else {
+            try { initialize(); } catch (e) { console.error('Init error:', e); }
+        }
+
+        // Ensure WebSocket connects even if initialize fails
+        setTimeout(() => {
+            if (!wsConnected) {
+                console.log('Fallback: forcing WebSocket connection');
+                connectWebSocket();
+            }
+        }, 2000);
+
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('headerTime').textContent = now.toLocaleString('en-US', {
+                month: '1/2-digit',
+                day: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+        }
+
+        function renderGrid() {
+            console.log('--- renderGrid called ---');
+            const grid = document.getElementById('defectGrid');
+            grid.innerHTML = '';
+
+            if (isShowingLevel3 && selectedPart) {
+                // Show defects for selected part
+                console.log('Showing Level 3 for part:', selectedPart);
+                const defects = getDefectsForPart(selectedPart);
+                document.getElementById('gridTitle').textContent = `Level 3 - ${selectedPart}`;
+                document.getElementById('backButton').style.display = 'block';
+
+                defects.forEach(({ defect, code }) => {
+                    const button = document.createElement('button');
+                    button.className = 'defect-button';
+                    button.textContent = defect;
+                    button.onclick = () => handleDefectClick(defect, code);
+
+                    if (predictedDefect && predictedDefect === defect) {
+                        button.classList.add('predicted');
+                    } else if (selectedDefect && selectedDefect.defect === defect) {
+                        button.classList.add('selected-defect');
+                    }
+
+                    if (isSpacePressed) {
+                        button.classList.add('space-pressed');
+                    }
+
+                    grid.appendChild(button);
+                });
+            } else {
+                // Show parts
+                console.log('Showing Level 2 parts - currentPage:', currentPage);
+                document.getElementById('gridTitle').textContent = 'Defect Level 2';
+                document.getElementById('backButton').style.display = 'none';
+
+                const currentParts = partPages[currentPage] || [];
+                console.log('currentParts array:', currentParts);
+                console.log('currentParts length:', currentParts.length);
+
+                currentParts.forEach((part, index) => {
+                    console.log(`Creating button ${index}: "${part}" (disabled: ${!part})`);
+                    const button = document.createElement('button');
+                    button.className = 'defect-button';
+                    button.textContent = part;
+                    button.disabled = !part;
+                    button.onclick = () => handlePartClick(part);
+
+                    if (predictedPart === part) {
+                        button.classList.add('predicted');
+                    } else if (selectedPart === part) {
+                        button.classList.add('selected');
+                    }
+
+                    if (isSpacePressed && part) {
+                        button.classList.add('space-pressed');
+                    }
+
+                    grid.appendChild(button);
+                });
+
+                console.log('Total buttons created:', grid.children.length);
+                // Update page display
+                document.getElementById('pageDisplay').textContent =
+                    `${String(currentPage + 1).padStart(2, '0')}/${String(partPages.length).padStart(2, '0')}`;
+            }
+            console.log('--- renderGrid complete ---');
+        }
+
+        function getDefectsForPart(part) {
+            const partData = lqcData.filter(item => item.part === part);
+            const uniqueDefects = new Map();
+            partData.forEach(item => {
+                if (!uniqueDefects.has(item.defect)) {
+                    uniqueDefects.set(item.defect, item.code);
+                }
+            });
+            return Array.from(uniqueDefects.entries()).map(([defect, code]) => ({ defect, code }));
+        }
+
+        function handlePartClick(part) {
+            if (!part) return;
+            predictedPart = null;
+            predictedDefect = null;
+            awaitingVoiceConfirm = false;
+            pendingDefectForConfirm = null;
+            selectedPart = part;
+            selectedDefect = null;
+            isShowingLevel3 = true;
+            document.getElementById('level2Display').textContent = part;
+            document.getElementById('level3Display').textContent = '';
+            document.getElementById('defectCodeDisplay').textContent = 'LA';
+            document.getElementById('codeInput').value = 'LA';
+            document.getElementById('codeNameInput').value = '';
+            document.getElementById('checkmark').style.display = 'none';
+            document.getElementById('confirmButton').disabled = true;
+            setStatus('READY');
+            renderGrid();
+        }
+
+        function handleDefectClick(defect, code) {
+            predictedDefect = null;
+            awaitingVoiceConfirm = false;
+            pendingDefectForConfirm = null;
+            selectedDefect = { defect, code };
+            document.getElementById('level3Display').textContent = defect;
+            document.getElementById('defectCodeDisplay').textContent = code;
+            document.getElementById('codeInput').value = code;
+            document.getElementById('codeNameInput').value = defect;
+            document.getElementById('checkmark').style.display = 'inline';
+            document.getElementById('confirmButton').disabled = false;
+            setStatus(code);
+            renderGrid();
+        }
+
+        function goBack() {
+            predictedPart = null;
+            predictedDefect = null;
+            awaitingVoiceConfirm = false;
+            pendingDefectForConfirm = null;
+            isShowingLevel3 = false;
+            renderGrid();
+        }
+
+        function prevPage() {
+            if (isShowingLevel3) return;
+            currentPage = currentPage > 0 ? currentPage - 1 : partPages.length - 1;
+            renderGrid();
+        }
+
+        function nextPage() {
+            if (isShowingLevel3) return;
+            currentPage = currentPage < partPages.length - 1 ? currentPage + 1 : 0;
+            renderGrid();
+        }
+
+        function clearLevel(level) {
+            predictedPart = null;
+            predictedDefect = null;
+            awaitingVoiceConfirm = false;
+            pendingDefectForConfirm = null;
+            if (level === 'level1') {
+                document.getElementById('level1Display').textContent = '';
+            } else if (level === 'level2') {
+                selectedPart = null;
+                selectedDefect = null;
+                isShowingLevel3 = false;
+                document.getElementById('level2Display').textContent = '';
+                document.getElementById('level3Display').textContent = '';
+                document.getElementById('defectCodeDisplay').textContent = 'LA';
+                document.getElementById('codeInput').value = 'LA';
+                document.getElementById('codeNameInput').value = '';
+                document.getElementById('checkmark').style.display = 'none';
+                document.getElementById('confirmButton').disabled = true;
+                setStatus('READY');
+                renderGrid();
+            } else if (level === 'level3') {
+                selectedDefect = null;
+                document.getElementById('level3Display').textContent = '';
+                document.getElementById('checkmark').style.display = 'none';
+                document.getElementById('confirmButton').disabled = true;
+                setStatus('READY');
+                renderGrid();
+            } else if (level === 'level4') {
+                document.getElementById('level4Display').textContent = '';
+            }
+        }
+
+        function confirmDefect() {
+            if (!selectedPart || !selectedDefect) return;
+            predictedPart = null;
+            predictedDefect = null;
+            awaitingVoiceConfirm = false;
+            pendingDefectForConfirm = null;
+
+            const historyItem = `${selectedPart} - ${selectedDefect.code} (${selectedDefect.defect})`;
+            repairHistory.push(historyItem);
+
+            // Update repair history display
+            const tbody = document.getElementById('repairHistoryBody');
+            tbody.innerHTML = '';
+            repairHistory.forEach(item => {
+                const tr = document.createElement('tr');
+                const td = document.createElement('td');
+                td.textContent = item;
+                tr.appendChild(td);
+                tbody.appendChild(tr);
+            });
+
+            // Reset
+            selectedPart = null;
+            selectedDefect = null;
+            isShowingLevel3 = false;
+            document.getElementById('level2Display').textContent = '';
+            document.getElementById('level3Display').textContent = '';
+            document.getElementById('defectCodeDisplay').textContent = 'LA';
+            document.getElementById('codeInput').value = 'LA';
+            document.getElementById('codeNameInput').value = '';
+            document.getElementById('checkmark').style.display = 'none';
+            document.getElementById('confirmButton').disabled = true;
+            setStatus('READY');
+            renderGrid();
+        }
+
+        function setStatus(text, type = 'ready') {
+            const statusText = document.getElementById('statusText');
+            const statusDisplay = document.getElementById('statusDisplay');
+            const micIcon = document.getElementById('micIcon');
+            const statusHint = document.getElementById('statusHint');
+
+            statusText.textContent = text;
+            statusText.className = 'status-text';
+            statusDisplay.className = 'status-display';
+            micIcon.style.display = 'none';
+            statusHint.textContent = '';
+
+            if (type === 'recording') {
+                statusText.classList.add('recording');
+                statusDisplay.classList.add('recording');
+                micIcon.style.display = 'block';
+                if (awaitingVoiceConfirm) {
+                    statusHint.textContent = 'Say CONFIRM | or click CONFIRM';
+                } else {
+                    statusHint.textContent = isShowingLevel3 ? 'Say DEFECT name | Release to classify' : 'Say COMPONENT name | Release to classify';
+                }
+            } else if (type === 'processing') {
+                statusText.classList.add('processing');
+                statusDisplay.classList.add('processing');
+                statusHint.textContent = 'Analyzing audio...';
+            } else if (type === 'result') {
+                statusText.classList.add('result');
+            } else if (type === 'ready') {
+                statusHint.textContent = wsConnected ? 'Hold SPACE to speak' : 'Connecting to server...';
+            }
+        }
+
+        // Keyboard handling for spacebar
+        let spaceKeyDownTime = null;
+
+        document.addEventListener('keydown', async (e) => {
+            if (e.code === 'Space' && !e.repeat && !isRecording && !isProcessing) {
+                e.preventDefault();
+
+                // On first press, request mic permission (needs user gesture)
+                if (!micReady && !micSetupAttempted) {
+                    setStatus('Requesting mic...', 'processing');
+                    await setupMicrophone();
+                    if (!micReady) {
+                        setStatus('Mic denied - check permissions', 'result');
+                        setTimeout(() => setStatus('READY', 'ready'), 3000);
+                        return;
+                    }
+                } else if (!micReady) {
+                    // Retry mic setup on each press if failed before
+                    micSetupAttempted = false;
+                    await setupMicrophone();
+                    if (!micReady) {
+                        setStatus('Mic not available', 'result');
+                        setTimeout(() => setStatus('READY', 'ready'), 2000);
+                        return;
+                    }
+                }
+
+                // Resume AudioContext if suspended (Chrome requires user gesture)
+                if (audioContext && audioContext.state === 'suspended') {
+                    await audioContext.resume();
+                    console.log('AudioContext resumed');
+                }
+
+                isSpacePressed = true;
+                isRecording = true;
+                spaceKeyDownTime = Date.now();
+                pendingAutoConfirm = false;
+                renderGrid();
+                startRecording();
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            if (e.code === 'Space' && isRecording) {
+                e.preventDefault();
+                isSpacePressed = false;
+                renderGrid();
+
+                // Only send if held for at least 300ms (avoid accidental taps)
+                const holdDuration = Date.now() - spaceKeyDownTime;
+                if (holdDuration < 300) {
+                    isRecording = false;
+                    setStatus('Hold longer to record', 'result');
+                    setTimeout(() => setStatus('READY', 'ready'), 1500);
+                    // Clean up audio
+                    if (scriptProcessor) { scriptProcessor.disconnect(); scriptProcessor = null; }
+                    audioChunks = [];
+                    document.getElementById('audioLevelBar').style.display = 'none';
+                    return;
+                }
+                stopRecording();
+            }
+        });
+
+        function startRecording() {
+            setStatus('RECORDING', 'recording');
+            document.getElementById('audioLevelBar').style.display = 'block';
+            audioChunks = [];
+            pendingAutoConfirm = false;
+
+            if (micReady && audioContext) {
+                // Resume audio context if suspended (browser policy)
+                if (audioContext.state === 'suspended') {
+                    audioContext.resume();
+                }
+
+                // Create real-time audio processing pipeline
+                const source = audioContext.createMediaStreamSource(mediaStream);
+                const analyser = audioContext.createAnalyser();
+                analyser.fftSize = 2048;
+                source.connect(analyser);
+
+                // Use ScriptProcessorNode to capture raw PCM data
+                scriptProcessor = audioContext.createScriptProcessor(4096, 1, 1);
+                source.connect(scriptProcessor);
+                scriptProcessor.connect(audioContext.destination);
+
+                scriptProcessor.onaudioprocess = (e) => {
+                    if (!isRecording) return;
+                    const inputData = e.inputBuffer.getChannelData(0);
+                    // Store a copy of the audio buffer
+                    audioChunks.push(new Float32Array(inputData));
+
+                    // Calculate real audio level for the level bar
+                    let sum = 0;
+                    for (let i = 0; i < inputData.length; i++) {
+                        sum += inputData[i] * inputData[i];
+                    }
+                    audioLevel = Math.sqrt(sum / inputData.length) * 5; // Amplify for visibility
+                    audioLevel = Math.min(audioLevel, 1);
+                    const fill = document.getElementById('audioLevelFill');
+                    fill.style.width = (audioLevel * 100) + '%';
+                    fill.style.backgroundColor = audioLevel > 0.7 ? '#ef4444' : audioLevel > 0.3 ? '#f59e0b' : '#22c55e';
+                };
+            } else {
+                // Fallback: simulate audio level if no mic
+                const levelInterval = setInterval(() => {
+                    if (!isRecording) { clearInterval(levelInterval); return; }
+                    audioLevel = Math.random() * 0.8 + 0.2;
+                    const fill = document.getElementById('audioLevelFill');
+                    fill.style.width = (audioLevel * 100) + '%';
+                    fill.style.backgroundColor = audioLevel > 0.7 ? '#ef4444' : audioLevel > 0.3 ? '#f59e0b' : '#22c55e';
+                }, 50);
+            }
+        }
+
+        function stopRecording() {
+            isRecording = false;
+            isProcessing = true;
+            setStatus('CLASSIFYING...', 'processing');
+            document.getElementById('audioLevelBar').style.display = 'none';
+
+            // Disconnect script processor
+            if (scriptProcessor) {
+                scriptProcessor.disconnect();
+                scriptProcessor = null;
+            }
+
+            // If we have real audio and WebSocket is connected, send to model
+            if (audioChunks.length > 0 && wsConnected && ws && ws.readyState === WebSocket.OPEN) {
+                // Merge all audio chunks into one Float32Array
+                const totalLength = audioChunks.reduce((sum, chunk) => sum + chunk.length, 0);
+                const mergedAudio = new Float32Array(totalLength);
+                let offset = 0;
+                for (const chunk of audioChunks) {
+                    mergedAudio.set(chunk, offset);
+                    offset += chunk.length;
+                }
+                audioChunks = [];
+
+                // Resample from browser's native rate to 16kHz for the model
+                const audioToSend = resampleTo16k(mergedAudio, nativeSampleRate);
+                console.log(`Captured ${totalLength} samples at ${nativeSampleRate}Hz, resampled to ${audioToSend.length} samples at 16kHz (${(audioToSend.length / 16000).toFixed(1)}s)`);
+
+                // Send raw PCM float32 audio to WebSocket
+                ws.send(audioToSend.buffer);
+
+                // The response will be handled by ws.onmessage -> handleModelResponse
+                // Set a timeout in case no response comes
+                setTimeout(() => {
+                    if (isProcessing) {
+                        isProcessing = false;
+                        setStatus('No response - try again', 'result');
+                        setTimeout(() => setStatus('READY'), 2000);
+                    }
+                }, 5000);
+            } else {
+                // Fallback: demo mode (no server)
+                isProcessing = false;
+                if (!wsConnected) {
+                    setStatus('Server not connected', 'result');
+                    document.getElementById('errorText').textContent = 'Start server: python audio_server_onnx.py';
+                    setTimeout(() => {
+                        setStatus('READY');
+                        document.getElementById('errorText').textContent = '';
+                    }, 3000);
+                } else {
+                    setStatus('No audio captured', 'result');
+                    setTimeout(() => setStatus('READY'), 2000);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

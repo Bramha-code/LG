@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+audio/
+audio_classified/
+*.pth
+.env

@@ -1,0 +1,3159 @@
+[
+  {
+    "lvl2": "Case Lamp(Cover)",
+    "lvl3": "Distance/Gap",
+    "code": "MAGSA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-05T14:25:52.763588"
+  },
+  {
+    "lvl2": "Home Bar Gasket",
+    "lvl3": "Not working Properly",
+    "code": "MAJDA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-05T14:26:56.592985"
+  },
+  {
+    "lvl2": "Home Bar Button",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAJFAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-05T14:27:02.211530"
+  },
+  {
+    "lvl2": "Flange",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAHKA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-05T14:27:59.291437"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Wrong Parts",
+    "code": "MAJNAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-05T14:28:03.412318"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Scratch",
+    "code": "MAJNAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-05T14:28:07.559270"
+  },
+  {
+    "lvl2": "F-Fan",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAAPAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-05T14:29:38.557188"
+  },
+  {
+    "lvl2": "F-Fan",
+    "lvl3": "Not working Properly",
+    "code": "MAAPAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-05T14:34:46.884120"
+  },
+  {
+    "lvl2": "F-Fan",
+    "lvl3": "Not working Properly",
+    "code": "MAAPAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-05T14:34:50.812206"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Opening/Closing force",
+    "code": "MADAB6",
+    "description": "\uc5ec\ub2eb\ud798/\uac1c\ubc29\ub825",
+    "timestamp": "2026-02-05T14:35:01.108100"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-05T14:37:36.426114"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-05T14:38:07.073018"
+  },
+  {
+    "lvl2": "Egg Tray",
+    "lvl3": "Missing",
+    "code": "MAAMAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-05T14:39:02.454113"
+  },
+  {
+    "lvl2": "Flange",
+    "lvl3": "Dent",
+    "code": "MAHKAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-05T14:40:47.649364"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Missing",
+    "code": "MABCAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-05T14:41:14.363192"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Missing",
+    "code": "MABCAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-05T14:41:42.237272"
+  },
+  {
+    "lvl2": "Egg Tray",
+    "lvl3": "Missing",
+    "code": "MAAMAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:16:58.417992"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:17:29.692608"
+  },
+  {
+    "lvl2": "C-Fan",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAAFAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T00:17:44.513339"
+  },
+  {
+    "lvl2": "Tray Meat",
+    "lvl3": "Dent",
+    "code": "MABWAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T00:18:09.393058"
+  },
+  {
+    "lvl2": "Gasket(R)",
+    "lvl3": "Crack/Tear",
+    "code": "MACAAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:20:07.278066"
+  },
+  {
+    "lvl2": "Egg Tray",
+    "lvl3": "Missing",
+    "code": "MAAMAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:20:15.894670"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:20:26.542399"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "PU Leakage",
+    "code": "MAARAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T00:20:42.009901"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Crack/Tear",
+    "code": "MABCAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:21:26.002852"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Crack/Tear",
+    "code": "MABCAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:21:29.423475"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Crack/Tear",
+    "code": "MABCAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:21:38.633992"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Distance/Gap",
+    "code": "MAARA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:22:28.877313"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Distance/Gap",
+    "code": "MAARA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:22:36.662925"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Distance/Gap",
+    "code": "MAARA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:22:43.622890"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Distance/Gap",
+    "code": "MAJTA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:23:38.646807"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAJTAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T00:24:03.557378"
+  },
+  {
+    "lvl2": "Egg Tray",
+    "lvl3": "Missing",
+    "code": "MAAMAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:24:35.610743"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:24:44.310500"
+  },
+  {
+    "lvl2": "Front-C",
+    "lvl3": "Distance/Gap",
+    "code": "MALEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:26:28.318846"
+  },
+  {
+    "lvl2": "Front-C",
+    "lvl3": "Dent",
+    "code": "MALEAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T00:26:43.571161"
+  },
+  {
+    "lvl2": "Grill Fan",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MACJA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:26:53.355031"
+  },
+  {
+    "lvl2": "Grill Fan",
+    "lvl3": "Not Cooling Properly",
+    "code": "MACJA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T00:27:05.148418"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Distance/Gap",
+    "code": "MADAA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:27:24.250642"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MADAAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T00:27:32.473206"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MADAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:27:53.780068"
+  },
+  {
+    "lvl2": "Door Magnet",
+    "lvl3": "Missing",
+    "code": "MADGAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:29:21.995566"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MADAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:29:38.166498"
+  },
+  {
+    "lvl2": "Door Lamp(Cover)",
+    "lvl3": "No Power",
+    "code": "MACVCU",
+    "description": "\uc804\uc6d0\ubb34/\ubd88\ube5b",
+    "timestamp": "2026-02-08T00:30:01.609579"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MADAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:30:49.522777"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:31:00.856868"
+  },
+  {
+    "lvl2": "Hinge-C",
+    "lvl3": "Missing",
+    "code": "MAAVAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:31:26.387053"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Crack/Tear",
+    "code": "MABCAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:33:43.397409"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Scratch",
+    "code": "MAERAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T00:34:37.764212"
+  },
+  {
+    "lvl2": "Vegetable Box",
+    "lvl3": "Crack/Tear",
+    "code": "MAEVAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:34:45.433498"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAERA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T00:34:52.944174"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Distance/Gap",
+    "code": "MADAA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:35:04.713380"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "Dent",
+    "code": "MADEAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T00:35:12.256237"
+  },
+  {
+    "lvl2": "Door Liner(F)",
+    "lvl3": "Crack/Tear",
+    "code": "MADCAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:35:20.420626"
+  },
+  {
+    "lvl2": "Door Magnet",
+    "lvl3": "Missing",
+    "code": "MADGAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:35:28.419116"
+  },
+  {
+    "lvl2": "Grill Fan",
+    "lvl3": "Distance/Gap",
+    "code": "MACJA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:35:35.006556"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Distance/Gap",
+    "code": "MADAA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:35:41.388524"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Dent",
+    "code": "MADAAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T00:35:45.041045"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Dent",
+    "code": "MADAAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T00:35:48.606134"
+  },
+  {
+    "lvl2": "Grill Fan",
+    "lvl3": "Distance/Gap",
+    "code": "MACJA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:35:55.353995"
+  },
+  {
+    "lvl2": "Basket",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAEFA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:36:20.383242"
+  },
+  {
+    "lvl2": "Basket",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAEFA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T00:36:26.980097"
+  },
+  {
+    "lvl2": "Basket",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAEFA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T00:36:30.273974"
+  },
+  {
+    "lvl2": "Basket",
+    "lvl3": "Wrong Parts",
+    "code": "MAEFAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T00:36:36.536923"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T00:36:45.800256"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T00:36:52.449140"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MADAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:37:02.455908"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Distance/Gap",
+    "code": "MAGQA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:37:14.932971"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Crack/Tear",
+    "code": "MACHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:37:22.278558"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Missing",
+    "code": "MACHAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:37:25.148054"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T00:37:39.143667"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "PU Leakage",
+    "code": "MADEAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T00:37:51.696491"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MADAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:38:01.090210"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T00:38:08.326959"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T00:38:14.208025"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Not Cooling Properly",
+    "code": "MADAAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T00:38:28.839085"
+  },
+  {
+    "lvl2": "Inner Case(R)",
+    "lvl3": "PU Leakage",
+    "code": "MAFSAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T00:39:16.613251"
+  },
+  {
+    "lvl2": "Front-C",
+    "lvl3": "Uneven/Stick Out(Parts)",
+    "code": "MALEA7",
+    "description": "\ub2e8\ucc28/\ub3cc\ucd9c(\ubd80\ud488)",
+    "timestamp": "2026-02-08T00:43:03.647519"
+  },
+  {
+    "lvl2": "Front-C",
+    "lvl3": "Dent",
+    "code": "MALEAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T00:43:20.680216"
+  },
+  {
+    "lvl2": "Front-C",
+    "lvl3": "Dent",
+    "code": "MALEAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T00:43:24.089480"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Missing",
+    "code": "MABCAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:43:49.830771"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MADAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:44:06.095109"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "PU Leakage",
+    "code": "MADEAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T00:44:13.886025"
+  },
+  {
+    "lvl2": "Basket",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAEFA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:44:27.892762"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "PU Leakage",
+    "code": "MADEAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T00:44:37.113950"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MADVA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T00:45:19.305696"
+  },
+  {
+    "lvl2": "Door Lamp(Cover)",
+    "lvl3": "No Power",
+    "code": "MACVCU",
+    "description": "\uc804\uc6d0\ubb34/\ubd88\ube5b",
+    "timestamp": "2026-02-08T00:45:30.027920"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:45:53.161450"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "Bulging",
+    "code": "MADEAV",
+    "description": "\ubc30\ubd80\ub984",
+    "timestamp": "2026-02-08T00:46:10.444636"
+  },
+  {
+    "lvl2": "Door Liner(F)",
+    "lvl3": "Bulging",
+    "code": "MADCAV",
+    "description": "\ubc30\ubd80\ub984",
+    "timestamp": "2026-02-08T00:47:02.765456"
+  },
+  {
+    "lvl2": "Dispenser",
+    "lvl3": "Not working Properly",
+    "code": "MADSAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T00:48:00.911337"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T00:48:30.750304"
+  },
+  {
+    "lvl2": "I/Maker(F)",
+    "lvl3": "Not working Properly",
+    "code": "MAAYAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T00:48:56.909193"
+  },
+  {
+    "lvl2": "Gasket(R)",
+    "lvl3": "Crack/Tear",
+    "code": "MACAAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:49:15.538448"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "No Power",
+    "code": "LADVCU",
+    "description": "E7",
+    "timestamp": "2026-02-08T00:50:14.926595"
+  },
+  {
+    "lvl2": "Door Lamp(Cover)",
+    "lvl3": "No Power",
+    "code": "MACVCU",
+    "description": "\uc804\uc6d0\ubb34/\ubd88\ube5b",
+    "timestamp": "2026-02-08T00:50:22.888873"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Missing",
+    "code": "MACHAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:50:44.003564"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "Bulging",
+    "code": "MADEAV",
+    "description": "\ubc30\ubd80\ub984",
+    "timestamp": "2026-02-08T00:51:04.921061"
+  },
+  {
+    "lvl2": "Leg",
+    "lvl3": "PU Leakage",
+    "code": "MADZAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T00:51:24.452440"
+  },
+  {
+    "lvl2": "Mark/Logo",
+    "lvl3": "Missing",
+    "code": "MABEAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:53:30.144870"
+  },
+  {
+    "lvl2": "F-Fan",
+    "lvl3": "Noise",
+    "code": "MAAPAR",
+    "description": "\uc18c\uc74c",
+    "timestamp": "2026-02-08T00:53:42.428105"
+  },
+  {
+    "lvl2": "F-Fan",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAAPAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T00:54:01.165039"
+  },
+  {
+    "lvl2": "Hinge-C",
+    "lvl3": "Missing",
+    "code": "MAAVAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:54:27.098452"
+  },
+  {
+    "lvl2": "Hinge-C",
+    "lvl3": "Dent",
+    "code": "MAAVAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T00:54:31.486507"
+  },
+  {
+    "lvl2": "Hinge-C",
+    "lvl3": "Dent",
+    "code": "MAAVAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T00:54:34.517717"
+  },
+  {
+    "lvl2": "Tray Meat",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MABWAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T00:54:42.363897"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Scratch",
+    "code": "MAARAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T00:54:50.509868"
+  },
+  {
+    "lvl2": "I/Maker(F)",
+    "lvl3": "Missing",
+    "code": "MAAYAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:55:26.482797"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T00:56:22.781645"
+  },
+  {
+    "lvl2": "Front-C",
+    "lvl3": "PU Leakage",
+    "code": "MALEAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T00:56:43.057370"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Wavy/Bending/Sink",
+    "code": "MAJTA5",
+    "description": "\uad74\uace1/\ubca4\ub529/\uc218\ucd95/\ubc00\ub9bc",
+    "timestamp": "2026-02-08T00:56:51.709382"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Wavy/Bending/Sink",
+    "code": "MAJTA5",
+    "description": "\uad74\uace1/\ubca4\ub529/\uc218\ucd95/\ubc00\ub9bc",
+    "timestamp": "2026-02-08T00:57:28.647220"
+  },
+  {
+    "lvl2": "Mark/Logo",
+    "lvl3": "Missing",
+    "code": "MABEAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:58:44.728027"
+  },
+  {
+    "lvl2": "Gasket(R)",
+    "lvl3": "Crack/Tear",
+    "code": "MACAAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:59:09.131189"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Crack/Tear",
+    "code": "MABCAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:59:21.463147"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Crack/Tear",
+    "code": "MABCAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T00:59:24.345539"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Missing",
+    "code": "MABCAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T00:59:27.525365"
+  },
+  {
+    "lvl2": "Tray Meat",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MABWAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T00:59:49.806160"
+  },
+  {
+    "lvl2": "C-Fan",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAAFAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T00:59:59.764842"
+  },
+  {
+    "lvl2": "Specification Label",
+    "lvl3": "Crack/Tear",
+    "code": "MABNAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T01:00:09.105377"
+  },
+  {
+    "lvl2": "O/Case",
+    "lvl3": "Dent",
+    "code": "MABFAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T01:00:25.291011"
+  },
+  {
+    "lvl2": "Gasket(F)",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MABYA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T01:01:04.915310"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T01:02:58.485201"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T01:03:32.402501"
+  },
+  {
+    "lvl2": "I/Maker(F)",
+    "lvl3": "Not working Properly",
+    "code": "MAAYAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T01:06:17.317457"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T01:06:24.237709"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Distance/Gap",
+    "code": "MAARA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T01:06:52.230667"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MAARAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T01:07:01.478441"
+  },
+  {
+    "lvl2": "Tray Meat",
+    "lvl3": "Dent",
+    "code": "MABWAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T01:07:16.038591"
+  },
+  {
+    "lvl2": "Specification Label",
+    "lvl3": "Missing",
+    "code": "MABNAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T01:07:24.410377"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "PU Leakage",
+    "code": "MADEAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T01:07:38.524246"
+  },
+  {
+    "lvl2": "Door Lamp(Cover)",
+    "lvl3": "No Power",
+    "code": "MACVCU",
+    "description": "\uc804\uc6d0\ubb34/\ubd88\ube5b",
+    "timestamp": "2026-02-08T01:07:50.712993"
+  },
+  {
+    "lvl2": "Grill Fan",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MACJA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T01:08:00.630146"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T01:08:13.244222"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T01:08:19.739591"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T01:08:27.117669"
+  },
+  {
+    "lvl2": "O/Case",
+    "lvl3": "Bulging",
+    "code": "MABFAV",
+    "description": "\ubc30\ubd80\ub984",
+    "timestamp": "2026-02-08T01:09:00.720883"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Distance/Gap",
+    "code": "MAJTA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T01:09:15.590332"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Missing",
+    "code": "MABCAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T01:09:21.877283"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Scratch",
+    "code": "MAARAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T01:09:29.055613"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Side Uneven",
+    "code": "MAARA7",
+    "description": "\ub2e8\ucc28/\ub3cc\ucd9c(\ubd80\ud488)",
+    "timestamp": "2026-02-08T01:09:33.736600"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Dent",
+    "code": "MAARAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T01:09:40.379530"
+  },
+  {
+    "lvl2": "Gasket(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MACAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T01:09:55.697500"
+  },
+  {
+    "lvl2": "I/Maker(F)",
+    "lvl3": "Not working Properly",
+    "code": "MAAYAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T01:10:04.665525"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T01:10:17.716470"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MADVA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T01:10:30.046083"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Not working Properly",
+    "code": "MADVAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T01:10:33.715396"
+  },
+  {
+    "lvl2": "Leg Screw",
+    "lvl3": "Missing",
+    "code": "MAKEAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T01:10:41.829651"
+  },
+  {
+    "lvl2": "Home Bar Button",
+    "lvl3": "Not working Properly",
+    "code": "MAJFAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T01:10:54.260322"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Dent",
+    "code": "MAJTAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T01:11:16.712623"
+  },
+  {
+    "lvl2": "Flange",
+    "lvl3": "Distance/Gap",
+    "code": "MAHKA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T01:11:44.865568"
+  },
+  {
+    "lvl2": "Flange",
+    "lvl3": "Distance/Gap",
+    "code": "MAHKA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T01:12:07.259799"
+  },
+  {
+    "lvl2": "Energy Lable",
+    "lvl3": "Wrong Parts",
+    "code": "MAEZAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T01:12:17.240489"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Crack/Tear",
+    "code": "MAERAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T01:12:24.735256"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAERA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T01:12:32.018000"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Crack/Tear",
+    "code": "MAERAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T01:12:37.888543"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAERA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T01:12:44.169428"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Crack/Tear",
+    "code": "MAERAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T01:12:49.401491"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Wrong Parts",
+    "code": "MAERAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T01:12:52.571683"
+  },
+  {
+    "lvl2": "Eva Screw",
+    "lvl3": "Missing",
+    "code": "MAFEAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T01:12:59.760900"
+  },
+  {
+    "lvl2": "Cap Deco(R)",
+    "lvl3": "Dent",
+    "code": "MAGFAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T01:13:08.632465"
+  },
+  {
+    "lvl2": "Ice Maker",
+    "lvl3": "Wrong Parts",
+    "code": "MAFYAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T01:13:15.280108"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Distance/Gap",
+    "code": "MAGQA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T01:13:22.162717"
+  },
+  {
+    "lvl2": "Flange",
+    "lvl3": "Distance/Gap",
+    "code": "MAHKA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T01:13:31.679084"
+  },
+  {
+    "lvl2": "Owner Manual",
+    "lvl3": "Wrong Parts",
+    "code": "MAEPAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T01:13:41.612621"
+  },
+  {
+    "lvl2": "Energy Lable",
+    "lvl3": "Missing",
+    "code": "MAEZAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T01:13:48.389274"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Not working Properly",
+    "code": "MAGQAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T01:13:55.484934"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T01:14:50.595913"
+  },
+  {
+    "lvl2": "Door(F)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MACXAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T01:15:01.091973"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:14:54.492774"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:15:03.923318"
+  },
+  {
+    "lvl2": "I/Maker(F)",
+    "lvl3": "Not working Properly",
+    "code": "MAAYAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T11:15:21.804333"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Distance/Gap",
+    "code": "MAARA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:20:21.844287"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "No Power",
+    "code": "LADVCU",
+    "description": "E7",
+    "timestamp": "2026-02-08T11:22:10.138535"
+  },
+  {
+    "lvl2": "O/Case",
+    "lvl3": "Scratch",
+    "code": "MABFAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T11:24:26.669113"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:32:37.870585"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:33:18.748836"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:33:36.922888"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T11:34:12.946454"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:35:10.450262"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Dent",
+    "code": "MAAHAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T11:35:25.411629"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T11:35:29.120264"
+  },
+  {
+    "lvl2": "Front-C",
+    "lvl3": "PU Leakage",
+    "code": "MALEAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T11:35:46.086138"
+  },
+  {
+    "lvl2": "Vegetable Box",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAEVA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T11:36:06.792974"
+  },
+  {
+    "lvl2": "Ice Maker",
+    "lvl3": "Missing",
+    "code": "MAFYAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T11:36:24.401175"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAGQA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T11:36:39.505160"
+  },
+  {
+    "lvl2": "Eva Screw",
+    "lvl3": "Missing",
+    "code": "MAFEAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T11:36:49.586633"
+  },
+  {
+    "lvl2": "Cap Deco(R)",
+    "lvl3": "Distance/Gap",
+    "code": "MAGFA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:37:09.476223"
+  },
+  {
+    "lvl2": "Door Cooling",
+    "lvl3": "Crack/Tear",
+    "code": "MADHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:39:03.564765"
+  },
+  {
+    "lvl2": "Flange",
+    "lvl3": "Scratch",
+    "code": "MAHKAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T11:39:19.865492"
+  },
+  {
+    "lvl2": "Vegetable Box",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAEVA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T11:39:30.620614"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Scratch",
+    "code": "MAERAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T11:40:35.477528"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Crack/Tear",
+    "code": "MAERAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:41:08.702580"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAJTA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T11:41:28.657595"
+  },
+  {
+    "lvl2": "Flange",
+    "lvl3": "Distance/Gap",
+    "code": "MAHKA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:42:07.863171"
+  },
+  {
+    "lvl2": "Specification Label",
+    "lvl3": "Missing",
+    "code": "MABNAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T11:42:31.819360"
+  },
+  {
+    "lvl2": "Vegetable Box",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAEVA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T11:42:51.196844"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "Dent",
+    "code": "MADEAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T11:43:22.180262"
+  },
+  {
+    "lvl2": "Leg Screw",
+    "lvl3": "Missing",
+    "code": "MAKEAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T11:43:41.435735"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Crack/Tear",
+    "code": "MACHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:43:50.142096"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Missing",
+    "code": "MACHAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T11:43:54.165196"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:44:07.691929"
+  },
+  {
+    "lvl2": "Dispenser",
+    "lvl3": "Not working Properly",
+    "code": "MADSAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T11:44:30.133043"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "Crack/Tear",
+    "code": "MADEAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:44:51.025337"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "PU Leakage",
+    "code": "MADEAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T11:45:03.358903"
+  },
+  {
+    "lvl2": "Grill Fan",
+    "lvl3": "Distance/Gap",
+    "code": "MACJA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:45:18.876193"
+  },
+  {
+    "lvl2": "Sticker Tilt",
+    "lvl3": "Crack/Tear",
+    "code": "MABPAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:45:59.813547"
+  },
+  {
+    "lvl2": "Sticker Tilt",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MABPA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T11:46:27.748005"
+  },
+  {
+    "lvl2": "Sticker Tilt",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MABPA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T11:46:31.763067"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MADAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T11:47:07.992119"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "PU Leakage",
+    "code": "MADAAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T11:47:24.650695"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T11:47:31.057528"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Dent",
+    "code": "MADAAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T11:47:39.421658"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MADAAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T11:47:46.187933"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "Bulging",
+    "code": "MADEAV",
+    "description": "\ubc30\ubd80\ub984",
+    "timestamp": "2026-02-08T11:47:59.447996"
+  },
+  {
+    "lvl2": "Dispenser",
+    "lvl3": "Not working Properly",
+    "code": "MADSAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T11:48:11.774565"
+  },
+  {
+    "lvl2": "Lead Switch",
+    "lvl3": "PU Leakage",
+    "code": "MAEAAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T11:48:22.388548"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "No Power",
+    "code": "LADVCU",
+    "description": "E7",
+    "timestamp": "2026-02-08T11:48:37.067781"
+  },
+  {
+    "lvl2": "Owner Manual",
+    "lvl3": "Missing",
+    "code": "MAEPAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T11:48:54.482036"
+  },
+  {
+    "lvl2": "Cap Deco(R)",
+    "lvl3": "Scratch",
+    "code": "MAGFAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T11:49:05.152747"
+  },
+  {
+    "lvl2": "Inner Case(R)",
+    "lvl3": "Distance/Gap",
+    "code": "MAFSA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:49:18.227282"
+  },
+  {
+    "lvl2": "Eva Screw",
+    "lvl3": "Missing",
+    "code": "MAFEAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T11:49:27.421705"
+  },
+  {
+    "lvl2": "Ice Maker",
+    "lvl3": "Crack/Tear",
+    "code": "MAFYAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:49:40.742496"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T11:50:09.741558"
+  },
+  {
+    "lvl2": "Lead Switch",
+    "lvl3": "Not working Properly",
+    "code": "MAEAAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T11:50:24.702216"
+  },
+  {
+    "lvl2": "Dispenser",
+    "lvl3": "Wrong Parts",
+    "code": "MADSAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T11:51:56.649659"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "No Power",
+    "code": "LADVCU",
+    "description": "E7",
+    "timestamp": "2026-02-08T11:52:06.793847"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MADVA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T11:52:11.437066"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Missing",
+    "code": "MACHAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T11:52:19.300303"
+  },
+  {
+    "lvl2": "Dispenser Lamp",
+    "lvl3": "Button noise",
+    "code": "MADTBR",
+    "description": "\ubc84\ud2bc\uc74c/\ubd80\uc800\uc74c",
+    "timestamp": "2026-02-08T11:52:56.000642"
+  },
+  {
+    "lvl2": "Door Cooling",
+    "lvl3": "Dent",
+    "code": "MADHAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T11:53:10.718138"
+  },
+  {
+    "lvl2": "Door Cooling",
+    "lvl3": "Dent",
+    "code": "MADHAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T11:53:15.331633"
+  },
+  {
+    "lvl2": "Grill Fan",
+    "lvl3": "Crack/Tear",
+    "code": "MACJAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:53:28.845731"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADEAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T11:53:40.344872"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "Bulging",
+    "code": "MADEAV",
+    "description": "\ubc30\ubd80\ub984",
+    "timestamp": "2026-02-08T11:53:49.597079"
+  },
+  {
+    "lvl2": "Vegetable Box",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAEVA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T11:54:06.780172"
+  },
+  {
+    "lvl2": "Shelf",
+    "lvl3": "Scratch",
+    "code": "MAERAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T11:54:15.042031"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "Dent",
+    "code": "MADEAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T11:54:31.038480"
+  },
+  {
+    "lvl2": "Dispenser",
+    "lvl3": "Not working Properly",
+    "code": "MADSAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T11:54:51.377296"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Crack/Tear",
+    "code": "MACHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:55:09.996670"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Crack/Tear",
+    "code": "MACHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:55:12.992716"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Crack/Tear",
+    "code": "MACHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:55:21.111186"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Crack/Tear",
+    "code": "MACHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T11:55:23.662890"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Missing",
+    "code": "MACHAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T11:55:26.543558"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:56:10.253303"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAJNAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T11:57:11.553256"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAJNA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T11:57:14.379917"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Missing",
+    "code": "MAJNAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T11:57:30.124788"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:57:39.195156"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T11:57:51.979611"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Wrong Parts",
+    "code": "MAAHAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:05:02.787587"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Dent",
+    "code": "MADAAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T12:05:54.200167"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:08:04.577848"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Wrong Parts",
+    "code": "MAAHAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:08:08.702075"
+  },
+  {
+    "lvl2": "Sticker Tilt",
+    "lvl3": "F/R Uneven ",
+    "code": "MABPA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:08:48.413391"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Missing",
+    "code": "MABCAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T12:08:59.892447"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "F/R Uneven ",
+    "code": "MABCA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:09:05.391329"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Distance/Gap",
+    "code": "MAJTA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:09:27.990934"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Distance/Gap",
+    "code": "MAJTA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:09:50.779340"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Wrong Parts",
+    "code": "MAJTAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:09:53.894134"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Distance/Gap",
+    "code": "MAJTA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:09:59.100082"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Distance/Gap",
+    "code": "MAJTA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:10:13.218710"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAJTA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:10:17.583827"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Wrong Parts",
+    "code": "MAJTAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:10:27.040388"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Distance/Gap",
+    "code": "MAJNA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:11:03.651015"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Dent",
+    "code": "MAJNAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T12:11:26.136621"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:11:34.062854"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAAHA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:11:37.142654"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "F/R Uneven ",
+    "code": "MAAHA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:12:18.548561"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAAHA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:12:22.733540"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "F/R Uneven ",
+    "code": "MAAHA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:12:25.736882"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAAHA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:12:27.724464"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:12:47.732329"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "F/R Uneven ",
+    "code": "MAAEA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:12:51.194536"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:12:57.167742"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:17:13.525889"
+  },
+  {
+    "lvl2": "Deodorizer",
+    "lvl3": "Missing",
+    "code": "MAHEAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T12:18:38.015533"
+  },
+  {
+    "lvl2": "Owner Manual",
+    "lvl3": "Wrong Parts",
+    "code": "MAEPAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:19:05.497657"
+  },
+  {
+    "lvl2": "Owner Manual",
+    "lvl3": "Wrong Parts",
+    "code": "MAEPAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:19:09.403081"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MADAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:20:25.127077"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Wrong Parts",
+    "code": "MADAAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:20:28.564125"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Dent",
+    "code": "MADAAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T12:21:16.249049"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Dent",
+    "code": "MADAAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T12:21:19.483200"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Dent",
+    "code": "MADAAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T12:21:22.930540"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Not Cooling Properly",
+    "code": "MADAAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T12:21:25.728116"
+  },
+  {
+    "lvl2": "Sticker Tilt",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MABPA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:21:36.979911"
+  },
+  {
+    "lvl2": "Door Stopper",
+    "lvl3": "Not Cooling Properly",
+    "code": "MACWAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:22:31.811345"
+  },
+  {
+    "lvl2": "Door Stopper",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MACWAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:22:38.358103"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:22:53.892011"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Scratch",
+    "code": "MAARAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T12:23:07.967601"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:23:20.691952"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:23:52.567551"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAAHA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:23:58.234942"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:24:06.837810"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:25:25.423558"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "No Power",
+    "code": "MAAEA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:25:28.912659"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:25:35.083186"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAAEA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:25:38.435923"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Wavy/Bending/Sink",
+    "code": "MAAEA5",
+    "description": "\uad74\uace1/\ubca4\ub529/\uc218\ucd95/\ubc00\ub9bc",
+    "timestamp": "2026-02-08T12:25:46.077469"
+  },
+  {
+    "lvl2": "C-Fan",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAAFAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:25:59.043968"
+  },
+  {
+    "lvl2": "C-Fan",
+    "lvl3": "F/R Uneven ",
+    "code": "MAAFAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:26:02.100891"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:26:07.766826"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAAHA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:26:10.956049"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAAHA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:26:16.066506"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:26:19.079317"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "No Power",
+    "code": "MAAHA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:26:23.065256"
+  },
+  {
+    "lvl2": "Egg Tray",
+    "lvl3": "Missing",
+    "code": "MAAMAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T12:26:30.489341"
+  },
+  {
+    "lvl2": "Egg Tray",
+    "lvl3": "Crack/Tear",
+    "code": "MAAMAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:26:37.655378"
+  },
+  {
+    "lvl2": "F-Fan",
+    "lvl3": "Noise",
+    "code": "MAAPAR",
+    "description": "\uc18c\uc74c",
+    "timestamp": "2026-02-08T12:26:43.222654"
+  },
+  {
+    "lvl2": "F-Fan",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAAPAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T12:26:46.290100"
+  },
+  {
+    "lvl2": "F-Fan",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAAPAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T12:27:01.632161"
+  },
+  {
+    "lvl2": "Gasket(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MACAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:27:18.357699"
+  },
+  {
+    "lvl2": "Gasket(R)",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MACAA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:27:21.908785"
+  },
+  {
+    "lvl2": "Gasket(R)",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MACAA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:27:25.755798"
+  },
+  {
+    "lvl2": "Gasket(R)",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MACAA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:27:32.810868"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Crack/Tear",
+    "code": "MABCAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:28:09.723435"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Crack/Tear",
+    "code": "MABCAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:28:12.549304"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Crack/Tear",
+    "code": "MABCAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:28:15.222216"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Missing",
+    "code": "MABCAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T12:28:18.138386"
+  },
+  {
+    "lvl2": "LVS Sticker",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MABCA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:28:21.773845"
+  },
+  {
+    "lvl2": "O/Case",
+    "lvl3": "Dent",
+    "code": "MABFAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T12:28:30.136361"
+  },
+  {
+    "lvl2": "O/Case",
+    "lvl3": "Wrong Parts",
+    "code": "LABFAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:28:33.392934"
+  },
+  {
+    "lvl2": "Gasket(F)",
+    "lvl3": "Distance/Gap",
+    "code": "MABYA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:28:50.594567"
+  },
+  {
+    "lvl2": "Gasket(F)",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MABYA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:28:53.853341"
+  },
+  {
+    "lvl2": "Gasket(F)",
+    "lvl3": "Distance/Gap",
+    "code": "MABYA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:28:56.751178"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "Bulging",
+    "code": "MADEAV",
+    "description": "\ubc30\ubd80\ub984",
+    "timestamp": "2026-02-08T12:29:10.989518"
+  },
+  {
+    "lvl2": "Dispenser Lamp",
+    "lvl3": "No Power",
+    "code": "MADTCU",
+    "description": "\uc804\uc6d0\ubb34/\ubd88\ube5b",
+    "timestamp": "2026-02-08T12:29:42.535880"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:33:21.124041"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Wrong Parts",
+    "code": "MAAHAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:33:24.165113"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Wrong Parts",
+    "code": "MAAHAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:33:28.563386"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Wrong Parts",
+    "code": "MAAHAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:33:33.429307"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Wrong Parts",
+    "code": "MAAHAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:33:36.442890"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Distance/Gap",
+    "code": "MAGQA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:33:52.396098"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Wrong Parts",
+    "code": "MAGQA7",
+    "description": "\ub2e8\ucc28/\ub3cc\ucd9c(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:33:55.522854"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Wrong Parts",
+    "code": "MAGQA7",
+    "description": "\ub2e8\ucc28/\ub3cc\ucd9c(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:33:59.666108"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Wrong Parts",
+    "code": "MAGQA7",
+    "description": "\ub2e8\ucc28/\ub3cc\ucd9c(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:34:02.647522"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAGQA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:36:02.965332"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "PU Leakage",
+    "code": "MAARAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T12:38:24.084555"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Distance/Gap",
+    "code": "MAJNA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:40:10.988864"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAJNA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:40:16.173930"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Crack/Tear",
+    "code": "MAJNAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:40:35.953587"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Missing",
+    "code": "MAJNAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T12:41:02.229739"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:41:23.219892"
+  },
+  {
+    "lvl2": "Vegetable Box",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAEVA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:43:34.660275"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Distance/Gap",
+    "code": "MAGQA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:43:54.108017"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:44:30.059347"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Wrong Parts",
+    "code": "MAAHAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:44:34.308164"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:44:45.562051"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:47:42.456267"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Wrong Parts",
+    "code": "MAAHAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:47:45.441828"
+  },
+  {
+    "lvl2": "C-Fan",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAAFAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:47:59.830564"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:48:09.896351"
+  },
+  {
+    "lvl2": "Mark/Logo",
+    "lvl3": "Wrong Parts",
+    "code": "MABEAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:48:30.390490"
+  },
+  {
+    "lvl2": "Mark/Logo",
+    "lvl3": "Wrong Parts",
+    "code": "MABEAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:48:33.333441"
+  },
+  {
+    "lvl2": "F-Fan",
+    "lvl3": "Not working Properly",
+    "code": "MAAPAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T12:48:41.136245"
+  },
+  {
+    "lvl2": "Sticker Tilt",
+    "lvl3": "Wrong Parts",
+    "code": "MABPAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:49:01.510342"
+  },
+  {
+    "lvl2": "I/Maker(F)",
+    "lvl3": "Wrong Parts",
+    "code": "MAAYAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:49:12.912276"
+  },
+  {
+    "lvl2": "I/Maker(F)",
+    "lvl3": "Wrong Parts",
+    "code": "MAAYAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:49:16.092369"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:49:23.753641"
+  },
+  {
+    "lvl2": "Gasket(F)",
+    "lvl3": "Distance/Gap",
+    "code": "MABYA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:49:48.305364"
+  },
+  {
+    "lvl2": "Gasket(F)",
+    "lvl3": "Wrong Parts",
+    "code": "MABYAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:49:51.994198"
+  },
+  {
+    "lvl2": "Hinge-C",
+    "lvl3": "Missing",
+    "code": "MAAVAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T12:50:03.559735"
+  },
+  {
+    "lvl2": "Hinge-C",
+    "lvl3": "F/R Uneven ",
+    "code": "MAAVA9",
+    "description": "\ub2ff\uc784/\uac04\uc12d",
+    "timestamp": "2026-02-08T12:50:07.336599"
+  },
+  {
+    "lvl2": "Hinge-C",
+    "lvl3": "Missing",
+    "code": "MAAVAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T12:50:26.723292"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MADVA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:50:44.715446"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MADVA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:50:54.977184"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Wrong Parts",
+    "code": "MADVAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:50:58.414419"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MADVA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:51:04.386788"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Not working Properly",
+    "code": "MADVAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T12:51:19.778006"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "F/R Uneven ",
+    "code": "MADVA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:51:22.589862"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAGQA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:51:37.375739"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:51:43.840917"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Distance/Gap",
+    "code": "MAGQA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:51:50.072055"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "No Power",
+    "code": "MAGQA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:52:07.455626"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Distance/Gap",
+    "code": "MAGQA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:52:16.211801"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:52:39.571688"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "F/R Uneven ",
+    "code": "MAAEA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T12:52:42.754205"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:52:51.863470"
+  },
+  {
+    "lvl2": "C-Fan",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAAFAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:53:03.818060"
+  },
+  {
+    "lvl2": "C-Fan",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAAFAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:53:15.035958"
+  },
+  {
+    "lvl2": "C-Fan",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAAFAA",
+    "description": "\uc720\ub3d9/\uc870\ub9bd\ubd88\ub7c9(\ubd80\ud488)",
+    "timestamp": "2026-02-08T12:53:24.514563"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:53:34.075065"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAAHA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:53:43.600023"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:53:59.562071"
+  },
+  {
+    "lvl2": "Mark/Logo",
+    "lvl3": "Wrong Parts",
+    "code": "MABEAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:54:25.313646"
+  },
+  {
+    "lvl2": "EPS",
+    "lvl3": "F/R Uneven ",
+    "code": "MAANAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T12:54:51.260495"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T12:55:02.667930"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Interference",
+    "code": "MAJNA9",
+    "description": "\ub2ff\uc784/\uac04\uc12d",
+    "timestamp": "2026-02-08T12:55:16.520041"
+  },
+  {
+    "lvl2": "Hinge Cover",
+    "lvl3": "Foreign Substance/Dirty",
+    "code": "MAJNA8",
+    "description": "\uc774\ubb3c",
+    "timestamp": "2026-02-08T12:55:20.286101"
+  },
+  {
+    "lvl2": "Dispenser",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MADSAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T12:55:26.921388"
+  },
+  {
+    "lvl2": "Dispenser",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MADSAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T12:55:32.918257"
+  },
+  {
+    "lvl2": "Dispenser",
+    "lvl3": "Wrong Parts",
+    "code": "MADSAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:55:35.186578"
+  },
+  {
+    "lvl2": "Dispenser",
+    "lvl3": "No Power",
+    "code": "MADSAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T12:55:40.003335"
+  },
+  {
+    "lvl2": "Leg Screw",
+    "lvl3": "Missing",
+    "code": "MAKEAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T12:55:48.453704"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Interference",
+    "code": "MAJTA9",
+    "description": "\ub2ff\uc784/\uac04\uc12d",
+    "timestamp": "2026-02-08T12:56:04.345137"
+  },
+  {
+    "lvl2": "Home Bar Button",
+    "lvl3": "Not working Properly",
+    "code": "MAJFAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T12:56:21.508766"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Wrong Parts",
+    "code": "MACHAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T12:56:47.726657"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T13:40:01.592283"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T13:40:12.258667"
+  },
+  {
+    "lvl2": "Front-L",
+    "lvl3": "Scratch",
+    "code": "MAARAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T13:40:25.382261"
+  },
+  {
+    "lvl2": "Mark/Logo",
+    "lvl3": "Wrong Parts",
+    "code": "MABEAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T13:40:35.923287"
+  },
+  {
+    "lvl2": "Display",
+    "lvl3": "Distance/Gap",
+    "code": "MADVA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T13:41:03.582762"
+  },
+  {
+    "lvl2": "Door Liner(R)",
+    "lvl3": "PU Leakage",
+    "code": "MADEAP",
+    "description": "\uc561\ub204\uc124",
+    "timestamp": "2026-02-08T13:41:19.963536"
+  },
+  {
+    "lvl2": "Warning Label",
+    "lvl3": "Crack/Tear",
+    "code": "MACHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T13:41:38.877640"
+  },
+  {
+    "lvl2": "Dispenser Lamp",
+    "lvl3": "No Power",
+    "code": "MADTCU",
+    "description": "\uc804\uc6d0\ubb34/\ubd88\ube5b",
+    "timestamp": "2026-02-08T13:41:55.065416"
+  },
+  {
+    "lvl2": "Door Cooling",
+    "lvl3": "Dent",
+    "code": "MADHAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T13:42:05.484947"
+  },
+  {
+    "lvl2": "Display(Error Code)",
+    "lvl3": "E2",
+    "code": "MADXM7",
+    "description": "E2",
+    "timestamp": "2026-02-08T13:42:16.442095"
+  },
+  {
+    "lvl2": "EPS",
+    "lvl3": "Wrong Parts",
+    "code": "MAANAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T13:42:31.035000"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Opening/Closing force",
+    "code": "MAJTB6",
+    "description": "\uc5ec\ub2eb\ud798/\uac1c\ubc29\ub825",
+    "timestamp": "2026-02-08T13:43:09.349838"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Interference",
+    "code": "MAJTA9",
+    "description": "\ub2ff\uc784/\uac04\uc12d",
+    "timestamp": "2026-02-08T13:43:11.777024"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Wavy/Bending/Sink",
+    "code": "MAJTA5",
+    "description": "\uad74\uace1/\ubca4\ub529/\uc218\ucd95/\ubc00\ub9bc",
+    "timestamp": "2026-02-08T13:43:19.562658"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Wavy/Bending/Sink",
+    "code": "MAJTA5",
+    "description": "\uad74\uace1/\ubca4\ub529/\uc218\ucd95/\ubc00\ub9bc",
+    "timestamp": "2026-02-08T13:43:28.923292"
+  },
+  {
+    "lvl2": "Front-C",
+    "lvl3": "Distance/Gap",
+    "code": "MALEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T13:43:42.049034"
+  },
+  {
+    "lvl2": "Front-C",
+    "lvl3": "Wrong Parts",
+    "code": "MALEAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T13:44:09.464955"
+  },
+  {
+    "lvl2": "Dispenser",
+    "lvl3": "Wrong Parts",
+    "code": "MADSAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T13:44:26.056496"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T13:44:39.606127"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T13:44:43.384861"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T13:44:47.377599"
+  },
+  {
+    "lvl2": "Door(R)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MADAAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T13:44:49.979874"
+  },
+  {
+    "lvl2": "Door(F)",
+    "lvl3": "Burr/Material/Printed",
+    "code": "MACXAK",
+    "description": "\uc7ac\uc9c8/Burr/\uc778\uc1c4/\ubc31\ud654",
+    "timestamp": "2026-02-08T13:45:15.917564"
+  },
+  {
+    "lvl2": "Bottom",
+    "lvl3": "Distance/Gap",
+    "code": "MAAEA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T13:45:30.217018"
+  },
+  {
+    "lvl2": "Flange",
+    "lvl3": "Scratch",
+    "code": "MAHKAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T13:45:49.342268"
+  },
+  {
+    "lvl2": "Flange",
+    "lvl3": "Distance/Gap",
+    "code": "MAHKA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T13:45:52.709149"
+  },
+  {
+    "lvl2": "Case Lamp(Cover)",
+    "lvl3": "Crack/Tear",
+    "code": "MAGSAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T13:46:10.030364"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Wavy/Bending/Sink",
+    "code": "MAJTA5",
+    "description": "\uad74\uace1/\ubca4\ub529/\uc218\ucd95/\ubc00\ub9bc",
+    "timestamp": "2026-02-08T13:46:25.062603"
+  },
+  {
+    "lvl2": "I/Maker(F)",
+    "lvl3": "Wrong Parts",
+    "code": "MAAYAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T13:46:44.571948"
+  },
+  {
+    "lvl2": "I/Maker(F)",
+    "lvl3": "Missing",
+    "code": "MAAYAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T13:46:54.569000"
+  },
+  {
+    "lvl2": "I/Maker(F)",
+    "lvl3": "Not working Properly",
+    "code": "MAAYAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T13:47:04.047464"
+  },
+  {
+    "lvl2": "Gasket(F)",
+    "lvl3": "Distance/Gap",
+    "code": "MABYA1",
+    "description": "\uac04\uaca9/\uc0ac\uc774\ub738",
+    "timestamp": "2026-02-08T13:47:44.371480"
+  },
+  {
+    "lvl2": "Specification Label",
+    "lvl3": "Crack/Tear",
+    "code": "MABNAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T13:47:59.237200"
+  },
+  {
+    "lvl2": "Specification Label",
+    "lvl3": "Wrong Parts",
+    "code": "MABNAE",
+    "description": "\ubc14\ub01c",
+    "timestamp": "2026-02-08T13:48:04.870450"
+  },
+  {
+    "lvl2": "Hinge-C",
+    "lvl3": "Missing",
+    "code": "MAAVAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T13:48:52.283571"
+  },
+  {
+    "lvl2": "EPS",
+    "lvl3": "F/R Uneven ",
+    "code": "MAANAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T13:49:15.747406"
+  },
+  {
+    "lvl2": "EPS",
+    "lvl3": "Missing",
+    "code": "MAANAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T13:49:20.197885"
+  },
+  {
+    "lvl2": "Door Liner(F)",
+    "lvl3": "Dent",
+    "code": "MADCAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T13:49:38.419565"
+  },
+  {
+    "lvl2": "Door Liner(F)",
+    "lvl3": "Dent",
+    "code": "MADCAM",
+    "description": "\ucc0d\ud798",
+    "timestamp": "2026-02-08T13:49:41.573382"
+  },
+  {
+    "lvl2": "Lead Switch",
+    "lvl3": "Not working Properly",
+    "code": "MAEAAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T13:50:26.760201"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAGQA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T13:51:30.190427"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Not fasten Properly/Misassembly",
+    "code": "MAGQA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T13:51:33.888137"
+  },
+  {
+    "lvl2": "Control Box",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAGQA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T13:51:37.050826"
+  },
+  {
+    "lvl2": "Flange",
+    "lvl3": "Scratch",
+    "code": "MAHKAL",
+    "description": "\uc2a4\ud06c\ub798\uce58",
+    "timestamp": "2026-02-08T13:51:53.505036"
+  },
+  {
+    "lvl2": "Home Bar Deco",
+    "lvl3": "Wavy/Bending/Sink",
+    "code": "MAJEA5",
+    "description": "\uad74\uace1/\ubca4\ub529/\uc218\ucd95/\ubc00\ub9bc",
+    "timestamp": "2026-02-08T13:52:13.791319"
+  },
+  {
+    "lvl2": "Home Bar Deco",
+    "lvl3": "Wavy/Bending/Sink",
+    "code": "MAJEA5",
+    "description": "\uad74\uace1/\ubca4\ub529/\uc218\ucd95/\ubc00\ub9bc",
+    "timestamp": "2026-02-08T13:52:18.164501"
+  },
+  {
+    "lvl2": "Home Bar Deco",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAJEA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T13:52:22.920560"
+  },
+  {
+    "lvl2": "Home Bar Button",
+    "lvl3": "Not working Properly",
+    "code": "MAJFAQ",
+    "description": "\ub3d9\uc791\ubd88\ub7c9",
+    "timestamp": "2026-02-08T13:52:38.119344"
+  },
+  {
+    "lvl2": "etc",
+    "lvl3": "Interference",
+    "code": "MAJTA9",
+    "description": "\ub2ff\uc784/\uac04\uc12d",
+    "timestamp": "2026-02-08T13:52:48.114636"
+  },
+  {
+    "lvl2": "Leg Screw",
+    "lvl3": "Missing",
+    "code": "MAKEAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T13:52:57.907158"
+  },
+  {
+    "lvl2": "Hinge-C",
+    "lvl3": "Missing",
+    "code": "MAAVAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T13:53:18.879957"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Crack/Tear",
+    "code": "MAAHAB",
+    "description": "\ud06c\ub799/\ucc22\uc5b4\uc9d0",
+    "timestamp": "2026-02-08T14:32:02.062005"
+  },
+  {
+    "lvl2": "Cover T/V",
+    "lvl3": "Coming off/Not inserting",
+    "code": "MAAHA0",
+    "description": "\ud0c8\uac70/\ub35c\uc0bd\uc785/\ubbf8\uc0bd\uc785",
+    "timestamp": "2026-02-08T14:32:05.863730"
+  },
+  {
+    "lvl2": "Hinge-C",
+    "lvl3": "Missing",
+    "code": "MAAVAD",
+    "description": "\ub204\ub77d",
+    "timestamp": "2026-02-08T14:32:19.236754"
+  }
+]
