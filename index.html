@@ -1325,7 +1325,7 @@
         // Auto-detect WebSocket URL based on how the page was loaded
         const WS_URL = (function () {
             if (window.location.protocol === 'file:') {
-                return 'ws://localhost:8000/ws';
+                return 'ws://localhost:8001/ws';
             }
             const wsProto = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
             return wsProto + '//' + window.location.host + '/ws';
@@ -1743,7 +1743,7 @@
                     if (wsConnected) {
                         hint.textContent = micReady ? 'Hold SPACE to speak' : 'Press SPACE to enable mic';
                     } else {
-                        hint.textContent = 'Connecting to ws://localhost:8000/ws ...';
+                        hint.textContent = 'Connecting to ws://localhost:8001/ws ...';
                     }
                 }
             }, 2000);

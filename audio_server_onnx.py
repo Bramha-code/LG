@@ -450,7 +450,7 @@ async def startup_event():
     base_dir = Path(__file__).parent
 
     # Load ONNX model
-    model_path = base_dir / "trained" / "audio_classifier.onnx"
+    model_path = base_dir / "trained" / "best_model.onnx"
     mapping_path = base_dir / "trained" / "class_mapping.json"
     if model_path.exists() and mapping_path.exists():
         classifier = ONNXAudioClassifier(str(model_path), str(mapping_path))
@@ -644,6 +644,6 @@ if __name__ == "__main__":
     print("=" * 60)
     print("Audio Classification Server with LQC Code System")
     print("=" * 60)
-    print("\nStarting server at http://localhost:8000")
+    print("\nStarting server at http://localhost:8001")
     print("=" * 60)
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)
